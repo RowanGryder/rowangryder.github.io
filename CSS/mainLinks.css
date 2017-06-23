@@ -30,13 +30,11 @@ body {
   text-decoration-line: none;
   transition: color .3s; }
 
-/* line 68, /Users/Rowan/Documents/Paperjs/websiteProject/sass/mainLinks.scss */
 .leftBarContainer {
   position: absolute;
   left: 1%;
   bottom: 10%; }
 
-/* line 74, /Users/Rowan/Documents/Paperjs/websiteProject/sass/mainLinks.scss */
 .text {
   position: relative;
   color: #fff;
@@ -52,7 +50,6 @@ body {
   transition: transform .05s;
   text-decoration-line: none; }
 
-/* line 91, /Users/Rowan/Documents/Paperjs/websiteProject/sass/mainLinks.scss */
 .mainLinks {
   position: relative;
   color: #fff;
@@ -64,17 +61,14 @@ body {
   mix-blend-mode: difference;
   transition: color .2s ease-out, font-family .2s ease-out; }
 
-/* line 107, /Users/Rowan/Documents/Paperjs/websiteProject/sass/mainLinks.scss */
 .mainLinks:hover {
   color: #bbb;
-  font-family: "suisseBook", monospace; }
+}
 
-/* line 114, /Users/Rowan/Documents/Paperjs/websiteProject/sass/mainLinks.scss */
 .text:hover {
   transform: translate(-48%, -50%);
   color: #bbb; }
 
-/* line 120, /Users/Rowan/Documents/Paperjs/websiteProject/sass/mainLinks.scss */
 .nameHeader:hover {
   color: #bbb; }
 
@@ -97,5 +91,3 @@ body {
     transform: translate(0%, 0%); }
   100% {
     transform: translate(0%, 400%); } }
-
-/*# sourceMappingURL=mainLinks.css.map */
