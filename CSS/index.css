@@ -31,12 +31,12 @@ ul {
   height: 100%;
   width: 100%;
   transform: translate(66%, 0%);
-  background: #222;
+  background: #fff;
   top: 0%; }
 
 .nameHeader {
   position: absolute;
-  color: #fff;
+  color: #111;
     mix-blend-mode: difference;
   font-family: "suisseMedium", sans-serif;
   letter-spacing: 0.02em;
