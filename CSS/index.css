@@ -79,17 +79,18 @@ ul {
   list-style: none;
   transition: color .2s ease-out, font-family .2s ease-out; }
 
-/* line 106, /Users/Rowan/Documents/Paperjs/websiteProject/sass/mainSheet.scss */
 .mainLinks:hover {
   color: #bbb;
-/*  font-family: "suisseBook", cursive; }*/
+}
 
-/* line 113, /Users/Rowan/Documents/Paperjs/websiteProject/sass/mainSheet.scss */
+.subLinks:hover {
+  color: #bbb;
+}
+  
 .text:hover {
   transform: translate(-48%, -50%);
   color: #bbb; }
-
-/* line 119, /Users/Rowan/Documents/Paperjs/websiteProject/sass/mainSheet.scss */
+  
 .nameHeader:hover {
   color: #bbb; }
 
