@@ -1,3 +1,3 @@
 # rowangryderSite
 
-Temporary site for construction
+CG Artist // Graphics // Motion Designer
