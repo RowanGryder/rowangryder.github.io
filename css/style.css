@@ -312,6 +312,8 @@ div p {
     }
     
     .headerName {
+        top: .15em;
+        left: .15em;
         font-size: 2.5em;
     }
     
