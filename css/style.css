@@ -38,7 +38,7 @@ div p {
 }
 
 .upperContainer {
-    position: fixed;
+    position: relative;
     left: .4em;
     width: 100%;
     display: inline-block;
@@ -75,6 +75,7 @@ div p {
     background: #fff;
     margin: .4em;
     transition: .3s;
+    -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 
@@ -311,7 +312,7 @@ div p {
     }
     
     .headerName {
-        font-size: 3em;
+        font-size: 2.5em;
     }
     
     .navBar .change {
