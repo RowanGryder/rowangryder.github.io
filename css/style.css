@@ -1,9 +1,35 @@
+/*Code by Rowan Guarnagia-Gryder*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600|Work+Sans:600');
+
 body {
-  background-color: #111111;
+/*    background-color: #111111;*/
+    background: #000;
+    height: auto;
 }
 
-p, h2 {
-	font-family: sans-serif;
+a {
+	font-family: 'Work Sans', sans-serif;
+    color: #fff;
+}
+
+/*
+img {
+    width: auto;
+    height: auto;
+    max-width: 1024px;
+    max-height: 1024px;
+}
+*/
+
+div p {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+.contentStack p, h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
 }
 
 .linkContainer{
@@ -12,6 +38,8 @@ p, h2 {
 }
 
 .upperContainer {
+    position: fixed;
+    left: .4em;
     width: 100%;
     display: inline-block;
     transition: .2s;
@@ -22,7 +50,7 @@ p, h2 {
     top: 0;
     left: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 5;
     mix-blend-mode: difference;
 }
 
@@ -51,7 +79,7 @@ p, h2 {
 }
 
 .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(.7em,1em);
+    -webkit-transform: rotate(-45deg) translate(.7em,.7em);
     transform: rotate(-45deg) translate(-.7em,.7em);
 }
 
@@ -60,8 +88,8 @@ p, h2 {
 }
 
 .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-.7vw, -.7vw);
-    transform: rotate(45deg) translate(-1.4vw, -1.4vw);
+    -webkit-transform: rotate(45deg) translate(-.7em,.7em);
+    transform: rotate(45deg) translate(-.6em,-.6em);
 }
 
 .change .link .mainLinks {
@@ -76,9 +104,9 @@ p, h2 {
 
 .headerName {
     display: inline-block;
+    font-weight: 400;
     position: relative;
     color: #ffffff;
-    font-family: sans-serif;
     font-size: 4.5em;
     text-align: left;
     letter-spacing: .01em;
@@ -95,36 +123,41 @@ p, h2 {
 .mainLinks {
     display: inline-block;
     color: #ffffff;
-    font-family: sans-serif;
+/*    font-family: sans-serif;*/
     font-size: 3.5em;
-    font-weight: bold;
+    font-weight: 600;
     text-transform: lowercase;
     text-align: left;
     position: relative;
     text-decoration: none;
     mix-blend-mode: difference;
     transition: .2s;
+    z-index: 4;
+    -webkit-transform: translate3d(0, 0, 4);
+    transform: translate(0,0,4);
 }
 .mainLinks:hover {
   color: #888888;
 }
 .copyright {
-  bottom: 0%;
-  clear: left;
-  font-family: sans-serif, monospace;
-  color: #222;
-  text-transform: uppercase;
-  font-size: .7em;
-  text-align: justify;
-  letter-spacing: .1em;
-  mix-blend-mode: difference;
-  float: left;
-  position: absolute;
+    bottom: -1%;
+    clear: left;
+    font-family: sans-serif, monospace;
+    color: #222;
+    text-transform: uppercase;
+    font-size: .7em;
+    text-align: justify;
+    letter-spacing: .1em;
+/*  mix-blend-mode: difference;*/
+    float: left;
+    position: fixed;
+    z-index: 5;
+    -webkit-transform: translate3d(0, 0, 5)
 }
 
 /*Designs*/
 
-.orbd {
+.orb0 {
   height: 22vh;
   width: 22vh;
   border-radius: 50%;
@@ -151,62 +184,114 @@ p, h2 {
 
 .lines {
     height: 100vh;
+/*    background: linear-gradient(#00baff, #433dd9);*/
+/*    background: linear-gradient(#ffed89, #ebff00);*/
+/*    background: linear-gradient(#0000ff, #0000ff);*/
     background: #fff;
-    width: 15em;
+    width: 15.5em;
     left: 0;
     top: 0;
     position: fixed;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .line {
     position: relative;
-    left: -4em;
-    top: -8em;
-    background: #111;
-    width: 25em;
-    height: 1em;
+    left: -15vw;
+    top: -30vh;
+/*    background: #111;*/
+    background: #000;
+    width: 60vw;
+    height: 3vh;
     transform: rotate(-45deg);
-    margin-bottom: 2em;
+    margin-bottom: 5.7vh;
 }
 
 /*Work Styling*/
 
-.imgDescription {
-  position: relative;
-  display: grid;
-  color: #111111;
-  font-family: sans-serif;
-  font-size: 1.2em;
+.description {
+    position: relative;
+    display: grid;
+    color: #fff;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3em;
+    text-align: right;
+    right: 2em;
+    text-transform: lowercase;
+    margin-top: 5em;
+    padding-top: 1em;
+/*    border-top: dotted .5em #f55;*/
 }
 .portfolioImage {
+    max-width: inherit;
+/*    width: 80vw;*/
+    height: 90vh;
+    width: auto;
+    display: block;
+    margin: auto;
+    
+}
+
+.portfolioImageWide {
+    max-width: inherit;
     width: inherit;
+    display: block;
+    margin: auto;
+    
+}
+
+.portfolioVideo {
+    max-width: inherit;
+    width: inherit;
+/*    height: auto;*/
     padding-right: 1vh;
+    display: block;
+    margin: auto;
 }
 .imgContainer {
-  width: 100%;
-  position: relative;
-  margin-bottom: 1em;
+    max-width: 1024px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 1em;
 }
 .imageStack {
-  width: 80vw;
-  height: 90%;
-  overflow: scroll;
-  position: absolute;
-  right: 0%;
-  top: 6em;
+    width: 80vw;
+    height: auto;
+    overflow: none;
+    position: absolute;
+    right: 0%;
+    top: 6em;
 }
 .contentStack {
-    position: relative;
-  width: 80vw;
-  height: 90%;
-  overflow: scroll;
-  position: absolute;
-  right: 0%;
-  top: 10%;
+    position: absolute;
+    width: 80vw;
+    height: auto;
+    overflow: none;
+    position: absolute;
+    right: 0%;
+    top: 6em;
+    z-index: 5;
+    mix-blend-mode: difference;
+}
+.albumImage {
+    width: 100%
 }
 
+.album {
+    display: block;
+    float: left;
+    margin-right: 1em;
+    width: 30%;
+}
+.center{
+    display: block;
+    margin: auto;
+}
 
+.textContent {
+    mix-blend-mode: difference;
+}
 
 @media screen and (max-width: 700px) {
 /*
@@ -246,5 +331,9 @@ p, h2 {
     
     .lines {
         width: 2em;
+    }
+    
+    .description {
+        font-size: 1.5em;
     }
 }
