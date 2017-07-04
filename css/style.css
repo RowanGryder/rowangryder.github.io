@@ -13,15 +13,6 @@ a {
     color: #fff;
 }
 
-/*
-img {
-    width: auto;
-    height: auto;
-    max-width: 1024px;
-    max-height: 1024px;
-}
-*/
-
 div p {
     font-family: 'Open Sans', sans-serif;
     color: #fff;
@@ -295,14 +286,7 @@ div p {
 }
 
 @media screen and (max-width: 700px) {
-/*
-    .navBar .mainLinks {
-        left: -50vh;
-        -webkit-transform: translate(-5em,0);
-        transform: translate(-5em,0);
-        
-    }
-*/
+    
     .menuIconContainer {
         position: fixed;
         float: right;
