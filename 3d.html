@@ -84,10 +84,100 @@
     
 <!--Portfolio 3D-->
     
+<!--Index Navigation-->
+    
+    <nav class="indexButton" id="indexSel">
+        <div class="indexHeader" onclick="indexOpen()">
+            <h2 class="headerI">INDEX</h2>
+            <h2 class="headerI">OPEN</h2>
+        </div>
+    </nav>
+    
+    <nav class="index" id="indexBar">
+        <div class="indexLinks">
+            <div class="indexHeader" onclick="indexClose()">
+                <h2 class="headerI">INDEX [X]</h2>
+                <h2 class="headerI">CLOSE</h2>
+            </div>
+
+            <p>2017</p>
+            <div class="linkContainer">
+                <a href="#werkplaats"><i>'Werkplaats'</i></a>
+            </div>
+            <div class="linkContainer">
+                <a href="#trackBike">Track Bike</a>
+            </div>
+            <div class="linkContainer">
+                <a href="#podBlauw"><i>'Pod : Blauw'</i></a>
+            </div>
+            <p>2016</p>
+            <div class="linkContainer">
+                <a href="#icarus"><i>'Icarus'</i></a>
+            </div>
+            <div class="linkContainer">
+                <a href="#dysmorph"><i>'Dysmorph'</i></a>
+            </div>
+            <div class="linkContainer">
+                <a href="#fun"><i>'Fun'</i></a>
+            </div>
+            <p>2015</p>
+            <div class="linkContainer">
+                <a href="#beetleMan">Beetle Man</a>
+            </div>
+            <p>2014</p>
+            <div class="linkContainer">
+                <a href="#fivePanel">5Panel Mockup</a>
+            </div>
+        </div>
+    </nav>
+    
+    
     <div class="imageStack" id="target">
         
+        
         <div>
-            <p class="description">Dysmorph Series</p>
+            <p class="description" id="werkplaats"><i>'Werkplaats'</i></p>
+        </div>
+		<div class="imgContainer">
+            <img src="https://c1.staticflickr.com/5/4218/34374519244_9945b897e4_h.jpg" class="portfolioImage">
+        </div>
+
+        <div>
+			<p class="description" id="trackBike">Track Bike Project</p>
+		</div>
+		
+		<div class="imgContainer">
+			<img src="https://c1.staticflickr.com/3/2939/33327853850_8617404c6c_h.jpg" class="portfolioImageWide">
+		</div>
+		<div class="imgContainer">
+			<img src="https://c2.staticflickr.com/4/3724/33582788481_f38dcf64ed_h.jpg" class="portfolioImageWide">
+        </div>
+        
+        <div>
+            <p class="description" id="podBlauw"><i>'Pod : Blauw'</i></p>
+        </div>
+        <div class="imgContainer">
+            <img src="https://c2.staticflickr.com/4/3926/32883400686_97d1dbc5d4_b.jpg" class="portfolioImage">
+        </div>
+        
+        <div>
+            <p class="description" id="dysmorph"><i>'Icarus'</i>(Kinect project built with Unity)</p>
+        </div>
+        <div class="imgContainer">
+            <img src="https://c2.staticflickr.com/6/5180/29529114344_e89715ccd5_b.jpg" class="portfolioImageWide">
+        </div>
+        <div class="imgContainer">
+            <img src="https://c1.staticflickr.com/9/8715/29529115934_351898811e_b.jpg" class="portfolioImageWide">
+        </div>
+        <div class="imgContainer">
+            <img src="https://c1.staticflickr.com/9/8413/30043392902_e72c6902bb_b.jpg" class="portfolioImageWide">
+        </div>
+        <div class="imgContainer">
+            <img src="https://c2.staticflickr.com/6/5767/30043392572_67965ee6f1_b.jpg" class="portfolioImageWide">
+        </div>
+        
+        <div>
+            <p class="description" id="dysmorph"><i>'Dysmorph'</i>(Series)</p>
         </div>
         
         <div class="imgContainer">
@@ -102,43 +192,33 @@
         <div class="imgContainer">
             <img src="https://c1.staticflickr.com/9/8579/29369372936_9fb30241a8_h.jpg" class="portfolioImageWide">
         </div>
-		
-		<div>
-			<p class="description">Track Bike Project</p>
-		</div>
-		
-		<div class="imgContainer">
-			<img src="https://c1.staticflickr.com/3/2939/33327853850_8617404c6c_h.jpg" class="portfolioImageWide">
-		</div>
-		<div class="imgContainer">
-			<img src="https://c2.staticflickr.com/4/3724/33582788481_f38dcf64ed_h.jpg" class="portfolioImageWide">
-        </div>
-		
-		<div class="imgContainer">
-			<img src="https://c2.staticflickr.com/6/5736/22968331981_8c6bf4e4d7_b.jpg" class="portfolioImage">
-		</div>
-		
+        
         <div>
-            <p class="description">Submissions</p>
+            <p class="description" id="fun"><i>'Fun'</i></p>
         </div>
         
         <div class="imgContainer">
-            <img src="https://c2.staticflickr.com/4/3926/32883400686_97d1dbc5d4_b.jpg" class="portfolioImage">
-        </div>
-		<div class="imgContainer">
-            <img src="https://c1.staticflickr.com/5/4218/34374519244_9945b897e4_h.jpg" class="portfolioImage">
+            <img src="https://c1.staticflickr.com/9/8160/29369364746_06a5359abe_b.jpg" class="portfolioImageWide">
         </div>
         
         <div>
-            <p class="description">5Panel Design Mockup</p>
+            <p class="description" id="beetleMan">Beetle Man Bust</p>
+        </div>
+        
+        <div class="imgContainer">
+			<img src="https://c1.staticflickr.com/5/4242/35589911992_7e541343c6_o.jpg" class="portfolioImage">
+		</div>
+        <div class="imgContainer">
+			<img src="https://c1.staticflickr.com/5/4289/35718627856_f387454323_o.jpg" class="portfolioImage">
+		</div>
+
+        
+        <div>
+            <p class="description" id="fivePanel">5Panel Design Mockup</p>
         </div>
         
         <div class="imgContainer">
             <img src="https://c1.staticflickr.com/9/8330/28992083831_a17c511c83_b.jpg" class="portfolioImageWide">
-        </div>
-		
-		<div class="imgContainer">
-            <img src="https://c1.staticflickr.com/9/8160/29369364746_06a5359abe_b.jpg" class="portfolioImageWide">
         </div>
         
     </div>

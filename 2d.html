@@ -82,17 +82,92 @@
         <div class="line"></div>
     </div>
     
-<!--Portfolio 3D-->
+<!--Portfolio 2D-->
+    
+<!--Index Navigation-->
+    
+    <nav class="indexButton" id="indexSel">
+        <div class="indexHeader" onclick="indexOpen()">
+            <h2 class="headerI">INDEX</h2>
+            <h2 class="headerI">OPEN</h2>
+        </div>
+    </nav>
+    
+    <nav class="index" id="indexBar">
+        <div class="indexLinks">
+            <div class="indexHeader" onclick="indexClose()">
+                <h2 class="headerI">INDEX [X]</h2>
+                <h2 class="headerI">CLOSE</h2>
+            </div>
+
+            <p>Posters</p>
+            <div class="linkContainer">
+                <a href="#underWater"><i>'Underwater'</i></a>
+            </div>
+            <div class="linkContainer">
+                <a href="#poipsy"><i>'Poison-Psyche/Psyche-Poison'</i></a>
+            </div>
+            <div class="linkContainer">
+                <a href="#antsychild"><i>'Antsy Child'</i></a>
+            </div>
+            <div class="linkContainer">
+                <a href="#22"><i>'22'</i></a>
+            </div>
+            <div class="linkContainer">
+                <a href="#listen"><i>'I Would Listen To That'</i></a>
+            </div>
+            
+            <p>Logos</p>
+            
+            <div class="linkContainer">
+                <a href="#delay"><i>'Delay Collective'</i></a>
+            </div>
+            
+            <p>Album Covers</p>
+            
+            <div class="linkContainer">
+                <a href="#mormck"><i>'More Night // McKinley Dixon'</i></a>
+            </div>
+            
+            <div class="linkContainer">
+                <a href="#kombucha"><i>'Kombucha Drinker'</i></a>
+            </div>
+            
+            <div class="linkContainer">
+                <a href="#beeps"><i>'Serious Beeps'</i></a>
+            </div>
+            
+            <p>Digital Displays</p>
+            
+            <div class="linkContainer">
+                <a href="#one"><i>'One'</i></a>
+            </div>
+            
+            <div class="linkContainer">
+                <a href="#zzz"><i>'Zoet Zacht Zuur'</i></a>
+            </div>
+            
+        </div>
+    </nav>
     
     <div class="imageStack" id="target">
         
         <div>
-            <p class="description">Posters</p>
+            <p class="description" id="posters">Posters</p>
+        </div>
+        
+        <div>
+            <p class="description" id="underwater"><i>'Underwater'</i></p>
         </div>
         
         <div class="imgContainer">
             <img src="https://c1.staticflickr.com/1/471/31569939424_c700044e97_h.jpg" class="portfolioImage">
         </div>
+        
+        <div>
+            <p class="description" id="poipsy"><i>'Poison-Psyche/Psyche-Poison'</i></p>
+        </div>
+        
 		<div class="imgContainer">
             <img src="https://c2.staticflickr.com/6/5653/30602615862_41199a4e6d_h.jpg" class="portfolioImage">
         </div>
@@ -102,23 +177,37 @@
         <div class="imgContainer">
             <img src="https://c2.staticflickr.com/6/5653/30084880543_b624d92602_b.jpg" class="portfolioImage">
         </div>
-		
-		<div class="imgContainer">
-            <img src="https://c1.staticflickr.com/1/471/31569939424_c91de9e0f2_b.jpg" class="portfolioImage">
+        
+        <div>
+            <p class="description" id="antsychild"><i>'Antsy Child'</i></p>
         </div>
         
         <div class="imgContainer">
             <img src="images/2D/antsyChildTone2.png" class="portfolioImage">
         </div>
+        
+        <div>
+            <p class="description" id="22"><i>'22'</i></p>
+        </div>
+        
         <div class="imgContainer">
             <img src="images/2D/22.png" class="portfolioImage">
         </div>
+        
+        <div>
+            <p class="description" id="listen"><i>'I Would Listen To That'</i></p>
+        </div>
+        
         <div class="imgContainer">
             <img src="images/2D/IWouldListenToThat.png" class="portfolioImage">
         </div>
         
         <div>
             <p class="description">Logos</p>
+        </div>
+        
+        <div>
+            <p class="description" id="delay"><i>'Delay Collective'</i></p>
         </div>
         
         <div class="imgContainer">
@@ -129,23 +218,46 @@
             <p class="description">Album Covers</p>
         </div>
         
+        <div>
+            <p class="description" id="moremck"><i>'More Night // McKinley Dixon'</i></p>
+        </div>
+        
         <div class="imgContainer">
             <img src="images/2D/MoreNightMcKinleyDixon_AlbumCover.png" class="portfolioImageWide">
         </div>
+        
+        <div>
+            <p class="description" id="kombucha"><i>'Kombucha Drinker'</i></p>
+        </div>
+        
         <div class="imgContainer">
             <img src="images/2D/kombuchaDrinker%5BRender%5D.jpg" class="portfolioImageWide">
         </div>
         
-                <div>
-            <a class="description">Misc. Graphics</a>
+        <div>
+            <p class="description" id="beeps"><i>'Serious Beeps'</i></p>
         </div>
         
         <div class="imgContainer">
             <img src="images/2D/skeletalBeeps.png" class="portfolioImageWide">
         </div>
+        
+        <div>
+            <a class="description">Digital Displays</a>
+        </div>
+        
+        <div>
+            <p class="description" id="one"><i>'One'</i></p>
+        </div>
+        
         <div class="imgContainer">
             <img src="images/2D/screen_1.jpg" class="portfolioImageWide">
         </div>
+        
+        <div>
+            <p class="description" id="zzz"><i>'Zoet Zacht Zuur'</i></p>
+        </div>
+        
         <div class="imgContainer">
             <img src="images/2D/zoet%20zacht%20zuur.jpg" class="portfolioImageWide">
         </div>

@@ -18,6 +18,11 @@ div p {
     color: #fff;
 }
 
+nav p {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
 .contentStack p, h2 {
     font-family: 'Open Sans', sans-serif;
     color: #fff;
@@ -26,6 +31,56 @@ div p {
 .linkContainer{
     width: 100%;
     display: inline-block;
+}
+
+.index {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 6em;
+    right: 0%;
+    height: auto;
+    width: 25%;
+    transition: .3s;
+    z-index: 7;
+    transform: translate(100%,0%);
+}
+
+.indexButton {
+    position: fixed;
+    top: 6em;
+    right: 0em;
+    height: auto;
+    transition: .3s;
+    mix-blend-mode: difference;
+    z-index: 7;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.indexHeader {
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+    overflow: hidden;
+    position: relative;
+    height: 2em;
+    top: 1em;
+}
+
+.headerI {
+    margin-top: -.1em;
+    transition: .3s;
+}
+
+.indexHeader:hover .headerI{
+    margin-top: -1.25em;
+    color: #f55;
+}
+
+.indexLinks {
+    position: relative;
+    left: 1em;
 }
 
 .upperContainer {
@@ -207,12 +262,11 @@ div p {
     color: #fff;
     width: 100%;
     font-family: 'Open Sans', sans-serif;
-    font-size: 3em;
+    font-size: .8em;
     text-align: right;
-    right: 2em;
+    right: 10vw;
+    margin-top: 3em;
     text-transform: lowercase;
-    margin-top: 5em;
-    padding-top: 1em;
 /*    border-top: dotted .5em #f55;*/
 }
 .portfolioImage {
@@ -240,6 +294,7 @@ div p {
     padding-right: 1vh;
     display: block;
     margin: auto;
+    z-index: 8;
 }
 .imgContainer {
     max-width: 1024px;
@@ -322,5 +377,10 @@ div p {
     
     .description {
         font-size: 1.5em;
+    }
+    
+    .index {
+        width: 100%;
+        font-size: 1.6em
     }
 }
