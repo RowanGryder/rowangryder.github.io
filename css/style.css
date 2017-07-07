@@ -103,7 +103,6 @@ nav p {
 }
 
 .indexLinks {
-    overflow: scroll;
     position: relative;
     left: 1em;
 }
