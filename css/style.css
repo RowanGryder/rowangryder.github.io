@@ -36,18 +36,20 @@ nav p {
 .index {
     background: rgba(0, 0, 0, 0.5);
     position: fixed;
-    top: 6em;
+    top: 50%;
     right: 0%;
     height: auto;
     width: 25%;
     transition: .3s;
     z-index: 7;
-    transform: translate(100%,0%);
+    transform: translate(130%,-50%);
+    padding-bottom: 1em;
+/*    padding-left: 1.5em;*/
 }
 
 .indexButton {
     position: fixed;
-    top: 6em;
+    top: 50%;
     right: 0em;
     height: auto;
     transition: .3s;
@@ -55,6 +57,25 @@ nav p {
     z-index: 7;
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
+}
+
+.indexButtonTwo {
+    position: fixed;
+    right: 100%;
+    top: 50%;
+    transition: .3s;
+    mix-blend-mode: difference;
+    z-index: 7;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    
+}
+
+#headerTwo{
+    background: rgba(0, 0, 0, 0.5);
+    padding-bottom: .5em;
+    transform: translate(.2em,.3em);
+    -webkit-transform: translate(.2em, .3em);
 }
 
 .indexHeader {
@@ -66,11 +87,14 @@ nav p {
     position: relative;
     height: 2em;
     top: 1em;
+    
 }
 
 .headerI {
     margin-top: -.1em;
     transition: .3s;
+    font-size: 2em;
+    text-transform: lowercase
 }
 
 .indexHeader:hover .headerI{
@@ -79,6 +103,7 @@ nav p {
 }
 
 .indexLinks {
+    overflow: scroll;
     position: relative;
     left: 1em;
 }
@@ -280,8 +305,9 @@ nav p {
 }
 
 .portfolioImageWide {
+    max-height: 90vh;
     max-width: inherit;
-    width: inherit;
+/*    width: inherit;*/
     display: block;
     margin: auto;
     
@@ -297,10 +323,12 @@ nav p {
     z-index: 8;
 }
 .imgContainer {
-    max-width: 1024px;
+    max-height: 90vh;
+    max-width: 100%;
     width: 100%;
     position: relative;
     margin-bottom: 1em;
+    right:  7.75em;
 }
 .imageStack {
     width: 80vw;
@@ -338,6 +366,12 @@ nav p {
 
 .textContent {
     mix-blend-mode: difference;
+}
+
+@media screen and (max-width: 1500px) {
+    .imgContainer {
+        right: 0;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -380,7 +414,11 @@ nav p {
     }
     
     .index {
-        width: 100%;
-        font-size: 1.6em
+        width: 80%;
+        font-size: 1.3em;
+    }
+    
+    .indexButton {
+        font-size: 1.3em;
     }
 }
