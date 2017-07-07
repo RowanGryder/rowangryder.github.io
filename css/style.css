@@ -84,7 +84,6 @@ nav p {
     color: #fff;
     cursor: pointer;
     transition: .3s;
-    overflow: hidden;
     position: relative;
     height: 2em;
     top: 1em;
