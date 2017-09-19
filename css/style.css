@@ -30,7 +30,9 @@ nav p {
 
 .linkContainer{
     width: 100%;
+    text-align: start;
     display: inline-block;
+    white-space: nowrap;
 }
 
 .index {
@@ -113,10 +115,12 @@ nav p {
     width: 100%;
     display: inline-block;
     transition: .2s;
+    overflow-x: visible;
 }
 
 .navBar {
-    width: 100%;
+    width: 0%;
+    margin: auto;
     top: 0;
     left: 0;
     position: fixed;
@@ -202,6 +206,7 @@ nav p {
     position: relative;
     text-decoration: none;
     mix-blend-mode: difference;
+    overflow-x: visible;
     transition: .2s;
     z-index: 4;
     -webkit-transform: translate3d(0, 0, 4);
