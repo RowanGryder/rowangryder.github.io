@@ -317,8 +317,17 @@ nav p {
     
 }
 
+.portfolioGif {
+    max-height: 400px;
+    max-width: 720px;
+    display: block;
+    margin: auto;
+    
+    
+}
+
 .portfolioVideo {
-    max-width: inherit;
+    max-width: 720px;
     width: inherit;
 /*    height: auto;*/
     padding-right: 1vh;
