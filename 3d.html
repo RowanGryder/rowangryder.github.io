@@ -1,54 +1,71 @@
 <!DOCTYPE html>
+<!--
+	Rowan Guarnagia-Gryder 2018(c)
+-->
 <html lang="en">
 
-<!--Code by Rowan Guarnagia-Gryder-->    
-    
 <head>
-    <meta charset="utf-8">
+	<title>Rowan Gryder  | 3D</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    
+<!-- StyleSheets -->
+    
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    
+<!-- Favicon -->
+    
+    <link rel="icon" type="image/png" href="/assets/images/icon.png">
+
+    <!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+	<!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Rowan Guarnagia-Gryder | Digital Grpahics Artist and Motion Designer| Portfolio | 3D |">
+    <meta name="description" content="Rowan Guarnagia-Gryder | Digital Graphics Artist and Motion Designer| Portfolio | Bio | Contact">
     <meta name="author" content="Rowan Gryder">
     <meta name="viewport" content="width=device-width, initial-scale= 1.0">
-
-    <title>Rowan Gryder | Work | 3D</title>
-
-    <link href="css/style.css" rel="stylesheet">
-    <script src="js/scripts.js"></script>
-    <link rel="icon" type="image/png" href="images/icon.png">
     
 </head>
 
-<body>
+
+<body onscroll="scrollScale()">
+    <header id="nameHeader">
+    <a href="index.html" class="headerName" id="nameTag">Rowan Gryder</a>
+</header>
+
+
+    
     <nav class="navBar">
+
+    <div class="upperContainer" id="elem">
         <div class="linkContainer">
-            <a href="index.html" class="headerName">Rowan Gryder</a>
+            <a href="work.html" class="mainLinks">|Work|</a>
+            <br>
         </div>
-        
-        <div class="upperContainer" id="elem">
-            <div class="linkContainer">
-                <a href="work.html" class="mainLinks">Work</a>
-            </div>
-            <div class="linkContainer">
-                <a href="about.html" class="mainLinks">Bio / CV</a>
-            </div>
-            <div class="linkContainer">
-                <a href="contact.html" class="mainLinks">Contact</a>
-            </div>
+        <div class="linkContainer">
+            <a href="photography.html" class="mainLinks">|Blog|</a>
+            <br>
         </div>
-        
-        
-        <div class="menuIconContainer" onclick="navFold(this)"> 
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+        <div class="linkContainer">
+            <a href="about.html" class="mainLinks">|About|</a>
         </div>
-    </nav>
+    </div>
+
+
+    <div class="navBurger" onclick="navFold(this)"> 
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
     
-    <div class="orb"></div>
-    <div class="orb sub0"></div>
-    <div class="orb sub1"></div>
-    <div class="orb sub2"></div>
+</nav>
     
+    
+
+    
+    <section>
+    <div id="stripesSVG"></div>
+<!--
     <div class="lines">
         <div class="line"></div>
         <div class="line"></div>
@@ -81,157 +98,240 @@
         <div class="line"></div>
         <div class="line"></div>
     </div>
+-->
+</section>
     
-<!--Portfolio 3D-->
+    <div id="backdrop"></div>
     
-<!--Index Navigation-->
-    
-    <nav class="indexButton" id="indexSel">
-        <div class="indexHeader" onclick="indexOpen()">
-            <h2 class="headerI">INDEX</h2>
-            <h2 class="headerI">OPEN</h2>
-        </div>
-    </nav>
-    
-    <nav class="index" id="indexBar">
-        <div class="indexButtonTwo">
-            <div class="indexHeader" id="headerTwo" onclick="indexClose()">
-                <h2 class="headerI">INDEX</h2>
-                <h2 class="headerI">CLOSE</h2>
-            </div>
-        </div>
-        
-        <div class="indexLinks">
+    <div class="spacer"></div>
 
-            <p>2017</p>
-            <div class="linkContainer">
-                <a href="#werkplaats"><i>'Werkplaats'</i></a>
-            </div>
-            <div class="linkContainer">
-                <a href="#trackBike">Track Bike</a>
-            </div>
-            <div class="linkContainer">
-                <a href="#podBlauw"><i>'Pod : Blauw'</i></a>
-            </div>
-            <p>2016</p>
-            <div class="linkContainer">
-                <a href="#icarus"><i>'Icarus'</i></a>
-            </div>
-            <div class="linkContainer">
-                <a href="#dysmorph"><i>'Dysmorph'</i></a>
-            </div>
-            <div class="linkContainer">
-                <a href="#fun"><i>'Fun'</i></a>
-            </div>
-            <p>2015</p>
-            <div class="linkContainer">
-                <a href="#beetleMan">Beetle Man</a>
-            </div>
-            <p>2014</p>
-            <div class="linkContainer">
-                <a href="#fivePanel">5Panel Mockup</a>
-            </div>
-        </div>
-    </nav>
+<section class="photoGallery">
     
+    <ul>
+        
+        
+            <p class="title">Living Room_</p>
+            <p class="date">2017</p>
+            
+        
+            
+        
+            
+                
+                
+                    <li>
+                        <img class="image b-lazy" src="https://c1.staticflickr.com/5/4689/39122713581_e48790ec9e_n.jpg" data-src="https://c1.staticflickr.com/5/4689/39122713581_e48790ec9e_b.jpg" alt="Living Room">
+                    </li>
+                
+        
+            
+        
+        
+        
+            <p class="title">Werkplaats_</p>
+            <p class="date">2017</p>
+            
+        
+            
+        
+            
+                
+                
+                    <li>
+                        <img class="image b-lazy" src="https://c1.staticflickr.com/5/4218/34374519244_4045f67fa1_n.jpg" data-src="https://c1.staticflickr.com/5/4218/34374519244_4045f67fa1_b.jpg" alt="Werkplaats">
+                    </li>
+                
+        
+            
+        
+        
+        
+            <p class="title">Track Bike_</p>
+            <p class="date">2017</p>
+            
+        
+            
+        
+            
+                
+                
+                    <li>
+                        <img class="image b-lazy" src="https://c1.staticflickr.com/3/2939/33327853850_8617404c6c_n.jpg" data-src="https://c1.staticflickr.com/3/2939/33327853850_8617404c6c_h.jpg" alt="trackbike_rendered">
+                    </li>
+                
+        
+            
+                
+                
+                    <li>
+                        <img class="image b-lazy" src="https://c2.staticflickr.com/4/3724/33582788481_887c48b189_n.jpg" data-src="https://c2.staticflickr.com/4/3724/33582788481_887c48b189_b.jpg" alt="trackbike_gray">
+                    </li>
+                
+        
+            
+        
+        
+        
+            <p class="title">Pods_</p>
+            <p class="date">2017</p>
+            
+        
+            
+        
+            
+                
+                
+                    <li>
+                        <img class="image b-lazy" src="https://c2.staticflickr.com/4/3926/32883400686_97d1dbc5d4_n.jpg" data-src="https://c2.staticflickr.com/4/3926/32883400686_97d1dbc5d4_b.jpg" alt="pod_blauw">
+                    </li>
+                
+        
+            
+                
+                
+        
+            
+                
+                
+        
+            
+        
+        
+        
+            <p class="title">Icarus_</p>
+            <p class="date">2016</p>
+            
+        
+            
+        
+            
+                
+                
+                    <li>
+                        <img class="image b-lazy" src="https://c2.staticflickr.com/6/5180/29529114344_e89715ccd5_n.jpg" data-src="https://c2.staticflickr.com/6/5180/29529114344_e89715ccd5_b.jpg" alt="icarus_001">
+                    </li>
+                
+        
+            
+                
+                
+                    <li>
+                        <img class="image b-lazy" src="https://c1.staticflickr.com/9/8715/29529115934_351898811e_n.jpg" data-src="https://c1.staticflickr.com/9/8715/29529115934_351898811e_b.jpg" alt="icarus_002">
+                    </li>
+                
+        
+            
+                
+                
+                    <li>
+                        <img class="image b-lazy" src="https://c1.staticflickr.com/9/8413/30043392902_e72c6902bb_n.jpg" data-src="https://c1.staticflickr.com/9/8413/30043392902_e72c6902bb_b.jpg" alt="icarus_003">
+                    </li>
+                
+        
+            
+                
+                
+                    <li>
+                        <img class="image b-lazy" src="https://c2.staticflickr.com/6/5767/30043392572_67965ee6f1_n.jpg" data-src="https://c2.staticflickr.com/6/5767/30043392572_67965ee6f1_b.jpg" alt="icarus_004">
+                    </li>
+                
+        
+            
+        
+        
+        
+            <p class="title">Dysmorph_</p>
+            <p class="date">2016</p>
+            
+        
+            
+        
+            
+                
+                
+                    <li>
+                        <img class="image b-lazy" src="https://c1.staticflickr.com/9/8125/29115605610_c205ac0dfd_n.jpg" data-src="https://c1.staticflickr.com/9/8125/29115605610_c6c38de11e_h.jpg" alt="distort_001">
+                    </li>
+                
+        
+            
+                
+                
+                    <li>
+                        <img class="image b-lazy" src="https://c1.staticflickr.com/9/8125/29369373446_bb59f81bf8_n.jpg" data-src="https://c1.staticflickr.com/9/8125/29369373446_bb59f81bf8_h.jpg" alt="distort_002">
+                    </li>
+                
+        
+            
+                
+                
+                    <li>
+                        <img class="image b-lazy" src="https://c1.staticflickr.com/9/8208/29115605030_5bfd8c5725_n.jpg" data-src="https://c1.staticflickr.com/9/8208/29115605030_5bfd8c5725_h.jpg" alt="distort_003">
+                    </li>
+                
+        
+            
+                
+                
+                    <li>
+                        <img class="image b-lazy" src="https://c1.staticflickr.com/9/8579/29369372936_9fb30241a8_n.jpg" data-src="https://c1.staticflickr.com/9/8579/29369372936_9fb30241a8_h.jpg" alt="distort_004">
+                    </li>
+                
+        
+            
+        
+        
+        
+            <p class="title">Beetle Head_</p>
+            <p class="date">2015</p>
+            
+        
+            
+        
+            
+                
+                
+                    <li>
+                        <img class="image b-lazy" src="https://c1.staticflickr.com/5/4242/35589911992_74c5b559b1_n.jpg" data-src="https://c1.staticflickr.com/5/4242/35589911992_74c5b559b1_b.jpg" alt="beetleHead_001">
+                    </li>
+                
+        
+            
+                
+                
+                    <li>
+                        <img class="image b-lazy" src="https://c1.staticflickr.com/5/4289/35718627856_61e2c15a32_n.jpg" data-src="https://c1.staticflickr.com/5/4289/35718627856_61e2c15a32_b.jpg" alt="beetleHead_002">
+                    </li>
+                
+        
+            
+                
+                
+                    <li>
+                        <img class="image b-lazy" src="https://c1.staticflickr.com/1/610/22334448764_4376f4e5d8_n.jpg" data-src="https://c1.staticflickr.com/1/610/22334448764_4376f4e5d8_b.jpg" alt="bettleHead_003">
+                    </li>
+                
+        
+            
+        
+        
+    </ul>
+</section>
     
-    <div class="imageStack" id="target">
-        
-        
-        <div>
-            <p class="description" id="werkplaats"><i>'Werkplaats'</i></p>
-        </div>
-		<div class="imgContainer">
-            <img src="https://c1.staticflickr.com/5/4218/34374519244_9945b897e4_h.jpg" class="portfolioImageWide">
-        </div>
+    <footer id="copyright">
+    <p>Copyright &copy; Rowan Guarnagia-Gryder</p>
+</footer>
 
-        <div>
-			<p class="description" id="trackBike">Track Bike Project</p>
-		</div>
-		
-		<div class="imgContainer">
-			<img src="https://c1.staticflickr.com/3/2939/33327853850_8617404c6c_h.jpg" class="portfolioImageWide">
-		</div>
-		<div class="imgContainer">
-			<img src="https://c2.staticflickr.com/4/3724/33582788481_f38dcf64ed_h.jpg" class="portfolioImageWide">
-        </div>
-        
-        <div>
-            <p class="description" id="podBlauw"><i>'Pod : Blauw'</i></p>
-        </div>
-        <div class="imgContainer">
-            <img src="https://c2.staticflickr.com/4/3926/32883400686_97d1dbc5d4_b.jpg" class="portfolioImageWide">
-        </div>
-        
-        <div>
-            <p class="description" id="icarus"><i>'Icarus'</i>(Kinect project built with Unity)</p>
-        </div>
-        <div class="imgContainer">
-            <img src="https://c2.staticflickr.com/6/5180/29529114344_e89715ccd5_b.jpg" class="portfolioImageWide">
-        </div>
-        <div class="imgContainer">
-            <img src="https://c1.staticflickr.com/9/8715/29529115934_351898811e_b.jpg" class="portfolioImageWide">
-        </div>
-        <div class="imgContainer">
-            <img src="https://c1.staticflickr.com/9/8413/30043392902_e72c6902bb_b.jpg" class="portfolioImageWide">
-        </div>
-        <div class="imgContainer">
-            <img src="https://c2.staticflickr.com/6/5767/30043392572_67965ee6f1_b.jpg" class="portfolioImageWide">
-        </div>
-        
-        <div>
-            <p class="description" id="dysmorph"><i>'Dysmorph'</i>(Series)</p>
-        </div>
-        
-        <div class="imgContainer">
-            <img src="https://c1.staticflickr.com/9/8125/29115605610_c6c38de11e_h.jpg" class="portfolioImageWide">
-        </div>
-        <div class="imgContainer">
-            <img src="https://c1.staticflickr.com/9/8125/29369373446_bb59f81bf8_h.jpg" class="portfolioImageWide">
-        </div>
-        <div class="imgContainer">
-            <img src="https://c1.staticflickr.com/9/8208/29115605030_5bfd8c5725_h.jpg" class="portfolioImageWide">
-        </div>
-        <div class="imgContainer">
-            <img src="https://c1.staticflickr.com/9/8579/29369372936_9fb30241a8_h.jpg" class="portfolioImageWide">
-        </div>
-        
-        <div>
-            <p class="description" id="fun"><i>'Fun'</i></p>
-        </div>
-        
-        <div class="imgContainer">
-            <img src="https://c1.staticflickr.com/9/8160/29369364746_06a5359abe_b.jpg" class="portfolioImageWide">
-        </div>
-        
-        <div>
-            <p class="description" id="beetleMan">Beetle Man Bust</p>
-        </div>
-        
-        <div class="imgContainer">
-			<img src="https://c1.staticflickr.com/5/4242/35589911992_7e541343c6_o.jpg" class="portfolioImageWide">
-		</div>
-        <div class="imgContainer">
-			<img src="https://c1.staticflickr.com/5/4289/35718627856_f387454323_o.jpg" class="portfolioImageWide">
-		</div>
+<!-- Scripts -->
+<script src="rowangryder.com/assets/js/scripts.js"></script>
+<script src="rowangryder.com/assets/js/blazy.js"></script>
+<script>
+    ;(function() {
+        // Initialize
+        var bLazy = new Blazy();
+    })();
+</script>
 
-        
-        <div>
-            <p class="description" id="fivePanel">5Panel Design Mockup</p>
-        </div>
-        
-        <div class="imgContainer">
-            <img src="https://c1.staticflickr.com/9/8330/28992083831_a17c511c83_b.jpg" class="portfolioImageWide">
-        </div>
-        
-    </div>
-
-
-    <footer class="copyright">
-        <p>Copyright &copy; Rowan Guarnagia-Gryder
-        </p>
-    </footer>
-    
 </body>
 
 </html>

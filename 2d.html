@@ -1,54 +1,71 @@
 <!DOCTYPE html>
+<!--
+	Rowan Guarnagia-Gryder 2018(c)
+-->
 <html lang="en">
 
-<!--Code by Rowan Guarnagia-Gryder-->    
-    
 <head>
-    <meta charset="utf-8">
+	<title>Rowan Gryder  | 2D</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    
+<!-- StyleSheets -->
+    
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    
+<!-- Favicon -->
+    
+    <link rel="icon" type="image/png" href="/assets/images/icon.png">
+
+    <!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+	<!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Rowan Guarnagia-Gryder | Digital Grpahics Artist and Motion Designer| Portfolio | 2D |">
+    <meta name="description" content="Rowan Guarnagia-Gryder | Digital Graphics Artist and Motion Designer| Portfolio | Bio | Contact">
     <meta name="author" content="Rowan Gryder">
     <meta name="viewport" content="width=device-width, initial-scale= 1.0">
-
-    <title>Rowan Gryder | Work | 2D</title>
-
-    <link href="css/style.css" rel="stylesheet">
-    <script src="js/scripts.js"></script>
-    <link rel="icon" type="image/png" href="images/icon.png">
     
 </head>
 
-<body>
+
+<body onscroll="scrollScale()">
+    <header id="nameHeader">
+    <a href="index.html" class="headerName" id="nameTag">Rowan Gryder</a>
+</header>
+
+
+    
     <nav class="navBar">
+
+    <div class="upperContainer" id="elem">
         <div class="linkContainer">
-            <a href="index.html" class="headerName">Rowan Gryder</a>
+            <a href="work.html" class="mainLinks">|Work|</a>
+            <br>
         </div>
-        
-        <div class="upperContainer" id="elem">
-            <div class="linkContainer">
-                <a href="work.html" class="mainLinks">Work</a>
-            </div>
-            <div class="linkContainer">
-                <a href="about.html" class="mainLinks">Bio / CV</a>
-            </div>
-            <div class="linkContainer">
-                <a href="contact.html" class="mainLinks">Contact</a>
-            </div>
+        <div class="linkContainer">
+            <a href="photography.html" class="mainLinks">|Blog|</a>
+            <br>
         </div>
-        
-        
-        <div class="menuIconContainer" onclick="navFold(this)"> 
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+        <div class="linkContainer">
+            <a href="about.html" class="mainLinks">|About|</a>
         </div>
-    </nav>
+    </div>
+
+
+    <div class="navBurger" onclick="navFold(this)"> 
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
     
-    <div class="orb"></div>
-    <div class="orb sub0"></div>
-    <div class="orb sub1"></div>
-    <div class="orb sub2"></div>
+</nav>
     
+    
+
+    
+    <section>
+    <div id="stripesSVG"></div>
+<!--
     <div class="lines">
         <div class="line"></div>
         <div class="line"></div>
@@ -81,228 +98,222 @@
         <div class="line"></div>
         <div class="line"></div>
     </div>
+-->
+</section>
     
-<!--Portfolio 2D-->
+    <div id="backdrop"></div>
     
-<!--Index Navigation-->
-    
-    <nav class="indexButton" id="indexSel">
-        <div class="indexHeader" onclick="indexOpen()">
-            <h2 class="headerI">INDEX</h2>
-            <h2 class="headerI">OPEN</h2>
-        </div>
-    </nav>
-    
-    <nav class="index" id="indexBar">
-        <div class="indexButtonTwo">
-            <div class="indexHeader" id="headerTwo" onclick="indexClose()">
-                <h2 class="headerI">INDEX</h2>
-                <h2 class="headerI">CLOSE</h2>
-            </div>
-        </div>
-        
-        <div class="indexLinks">
+    <div class="spacer"></div>
 
-            <p>Posters</p>
-            <div class="linkContainer">
-                <a href="#waves"><i>'Wave 01 | 02 | 03'</i></a>
-            </div>
-            <div class="linkContainer">
-                <a href="#underWater"><i>'Underwater'</i></a>
-            </div>
-            <div class="linkContainer">
-                <a href="#poipsy"><i>'Poison-Psyche/Psyche-Poison'</i></a>
-            </div>
-            <div class="linkContainer">
-                <a href="#antsychild"><i>'Antsy Child'</i></a>
-            </div>
-            <div class="linkContainer">
-                <a href="#22"><i>'22'</i></a>
-            </div>
-            <div class="linkContainer">
-                <a href="#listen"><i>'I Would Listen To That'</i></a>
-            </div>
-            
-            <p>Logos</p>
-            
-            <div class="linkContainer">
-                <a href="#delay"><i>'Delay Collective'</i></a>
-            </div>
-            
-            <p>Album Covers</p>
-            
-            <div class="linkContainer">
-                <a href="#frenchadog"><i>'French a Dog'</i></a>
-            </div>
-            
-            <div class="linkContainer">
-                <a href="#moremck"><i>'More Night // McKinley Dixon'</i></a>
-            </div>
-            
-            <div class="linkContainer">
-                <a href="#kombucha"><i>'Kombucha Drinker'</i></a>
-            </div>
-            
-            <div class="linkContainer">
-                <a href="#beeps"><i>'Serious Beeps'</i></a>
-            </div>
-            
-            <p>Digital Displays</p>
-            
-            <div class="linkContainer">
-                <a href="#one"><i>'One'</i></a>
-            </div>
-            
-            <div class="linkContainer">
-                <a href="#zzz"><i>'Zoet Zacht Zuur'</i></a>
-            </div>
-            
-        </div>
-    </nav>
+<section class="photoGallery">
     
-    <div class="imageStack" id="target">
+    <ul>
         
-        <div>
-            <p class="description" id="posters">Posters</p>
-        </div>
         
-        <div>
-            <p class="description" id="waves"><i>'Wave 01 | 02 | 03'</i></p>
-        </div>
+            <p class="title">Privacy Screen_</p>
+            <p class="date">2018</p>
+            
         
-        <div class="imgContainer">
-            <img src="https://c1.staticflickr.com/5/4370/35921534754_9f34497352_o.jpg" class="portfolioImageWide">
-        </div>
+            
         
-        <div class="imgContainer">
-            <img src="https://c1.staticflickr.com/5/4353/35921534714_aec4f87bfd_o.jpg" class="portfolioImageWide">
-        </div>
+            
+                
+                
+                    <li>
+                        <img class="image b-lazy" src="https://c1.staticflickr.com/5/4679/38427379994_674b99e27a_n.jpg" data-src="https://c1.staticflickr.com/5/4679/38427379994_674b99e27a_h.jpg" alt="PrivacyScreen_01">
+                    </li>
+                
         
-        <div class="imgContainer">
-            <img src="https://c1.staticflickr.com/5/4359/35921534604_968c1599c6_o.jpg" class="portfolioImageWide">
-        </div>
+            
+                
+                
+                    <li>
+                        <img class="image b-lazy" src="https://c1.staticflickr.com/5/4645/38426747474_ef20f5e110_n.jpg" data-src="https://c1.staticflickr.com/5/4645/38426747474_ef20f5e110_h.jpg" alt="PrivacyScreen_04">
+                    </li>
+                
         
-        <div>
-            <p class="description" id="underWater"><i>'Underwater'</i></p>
-        </div>
+            
         
-        <div class="imgContainer">
-            <img src="https://c1.staticflickr.com/1/471/31569939424_c700044e97_h.jpg" class="portfolioImageWide">
-        </div>
         
-        <div>
-            <p class="description" id="poipsy"><i>'Poison-Psyche/Psyche-Poison'</i></p>
-        </div>
         
-		<div class="imgContainer">
-            <img src="https://c2.staticflickr.com/6/5653/30602615862_41199a4e6d_h.jpg" class="portfolioImageWide">
-        </div>
-        <div class="imgContainer">
-            <img src="https://c2.staticflickr.com/6/5327/30084881143_5b7d58bc5f_b.jpg" class="portfolioImageWide">
-        </div>
-        <div class="imgContainer">
-            <img src="https://c2.staticflickr.com/6/5653/30084880543_b624d92602_b.jpg" class="portfolioImageWide">
-        </div>
+            <p class="title">Conversation_</p>
+            <p class="date">2017</p>
+            
         
-        <div>
-            <p class="description" id="antsychild"><i>'Antsy Child'</i></p>
-        </div>
+            
         
-        <div class="imgContainer">
-            <img src="images/2D/antsyChildTone2.png" class="portfolioImageWide">
-        </div>
+            
+                
+                
+                    <li>
+                        <img class="image b-lazy" src="https://c1.staticflickr.com/5/4361/36436662466_32ede4f841_n.jpg" data-src="https://c1.staticflickr.com/5/4361/36436662466_32ede4f841_b.jpg" alt="">
+                    </li>
+                
         
-        <div>
-            <p class="description" id="22"><i>'22'</i></p>
-        </div>
+            
         
-        <div class="imgContainer">
-            <img src="images/2D/22.png" class="portfolioImageWide">
-        </div>
         
-        <div>
-            <p class="description" id="listen"><i>'I Would Listen To That'</i></p>
-        </div>
         
-        <div class="imgContainer">
-            <img src="images/2D/IWouldListenToThat.png" class="portfolioImageWide">
-        </div>
+            <p class="title">Wave 01 / 02 / 03_</p>
+            <p class="date">2017</p>
+            
+                <p class="details">Series of 11x7 risograph posters.</p>
+            
         
-        <div>
-            <p class="description">Logos</p>
-        </div>
+            
         
-        <div>
-            <p class="description" id="delay"><i>'Delay Collective'</i></p>
-        </div>
+            
+                
+                
+                    <li>
+                        <img class="image b-lazy" src="https://c1.staticflickr.com/5/4370/35921534754_993602c911_n.jpg" data-src="https://c1.staticflickr.com/5/4370/35921534754_993602c911_b.jpg" alt="wave_01">
+                    </li>
+                
         
-        <div class="imgContainer">
-            <img src="images/2D/delaycollective_flip.png" class="portfolioImageWide">
-        </div>
+            
+                
+                
+                    <li>
+                        <img class="image b-lazy" src="https://c1.staticflickr.com/5/4353/35921534714_b7b969c614_n.jpg" data-src="https://c1.staticflickr.com/5/4353/35921534714_b7b969c614_b.jpg" alt="wave_02">
+                    </li>
+                
         
-        <div>
-            <p class="description">Album Covers</p>
-        </div>
+            
+                
+                
+                    <li>
+                        <img class="image b-lazy" src="https://c1.staticflickr.com/5/4359/35921534604_9bc7b15d59_n.jpg" data-src="https://c1.staticflickr.com/5/4359/35921534604_9bc7b15d59_b.jpg" alt="wave_03">
+                    </li>
+                
         
-        <div>
-            <p class="description" id="frenchadog"><i>'French a Dog'</i></p>
-        </div>
+            
         
-        <div class="imgContainer">
-            <img src="https://c1.staticflickr.com/5/4035/35649940401_537429f779_o.png" class="portfolioImageWide">
-        </div>
         
-        <div>
-            <p class="description" id="moremck"><i>'More Night // McKinley Dixon'</i></p>
-        </div>
         
-        <div class="imgContainer">
-            <img src="images/2D/MoreNightMcKinleyDixon_AlbumCover.png" class="portfolioImageWide">
-        </div>
+            <p class="title">Underwater_</p>
+            <p class="date">2017</p>
+            
         
-        <div>
-            <p class="description" id="kombucha"><i>'Kombucha Drinker'</i></p>
-        </div>
+            
         
-        <div class="imgContainer">
-            <img src="images/2D/kombuchaDrinker%5BRender%5D.jpg" class="portfolioImageWide">
-        </div>
+            
+                
+                
+                    <li>
+                        <img class="image b-lazy" src="https://c1.staticflickr.com/1/471/31569939424_c91de9e0f2_n.jpg" data-src="https://c1.staticflickr.com/1/471/31569939424_c91de9e0f2_b.jpg" alt="underwater_001">
+                    </li>
+                
         
-        <div>
-            <p class="description" id="beeps"><i>'Serious Beeps'</i></p>
-        </div>
+            
         
-        <div class="imgContainer">
-            <img src="images/2D/skeletalBeeps.png" class="portfolioImageWide">
-        </div>
         
-        <div>
-            <a class="description">Digital Displays</a>
-        </div>
         
-        <div>
-            <p class="description" id="one"><i>'One'</i></p>
-        </div>
+            <p class="title">Album Artworks_</p>
+            <p class="date">2017</p>
+            
+                <p class="details">Various album covers</p>
+            
         
-        <div class="imgContainer">
-            <img src="images/2D/screen_1.jpg" class="portfolioImageWide">
-        </div>
+            
         
-        <div>
-            <p class="description" id="zzz"><i>'Zoet Zacht Zuur'</i></p>
-        </div>
+            
+                
+                
+                    <li>
+                        <img class="image b-lazy" src="https://c1.staticflickr.com/5/4035/35649940401_c2c8d18319_n.jpg" data-src="https://c1.staticflickr.com/5/4035/35649940401_c2c8d18319_c.jpg" alt="French A Dog">
+                    </li>
+                
         
-        <div class="imgContainer">
-            <img src="images/2D/zoet%20zacht%20zuur.jpg" class="portfolioImageWide">
-        </div>
+            
+                
+                
+                    <li>
+                        <img class="image b-lazy" src="https://c2.staticflickr.com/8/7582/27602715973_32dc09e2a5_n.jpg" data-src="https://c2.staticflickr.com/8/7582/27602715973_32dc09e2a5_c.jpg" alt="Serious Beeps">
+                    </li>
+                
         
-    </div>
+            
+                
+                
+                    <li>
+                        <img class="image b-lazy" src="https://c1.staticflickr.com/3/2832/33922671445_a02b7657b7_n.jpg" data-src="https://c1.staticflickr.com/3/2832/33922671445_a02b7657b7_c.jpg" alt="Kombucha Drinker">
+                    </li>
+                
+        
+            
+        
+        
+        
+            <p class="title">Poison Psyche/Psyche Poison_</p>
+            <p class="date">2016</p>
+            
+                <p class="details">Series of 2 color 11x7 risograph prints.</p>
+            
+        
+            
+        
+            
+                
+                
+                    <li>
+                        <img class="image b-lazy" src="https://c2.staticflickr.com/6/5653/30602615862_65eea02e75_n.jpg" data-src="https://c2.staticflickr.com/6/5653/30602615862_65eea02e75_b.jpg" alt="poisonPsyche_001">
+                    </li>
+                
+        
+            
+                
+                
+                    <li>
+                        <img class="image b-lazy" src="https://c2.staticflickr.com/6/5327/30084881143_5b7d58bc5f_n.jpg" data-src="https://c2.staticflickr.com/6/5327/30084881143_5b7d58bc5f_b.jpg" alt="poisonPsyche_003">
+                    </li>
+                
+        
+            
+                
+                
+                    <li>
+                        <img class="image b-lazy" src="https://c2.staticflickr.com/6/5653/30084880543_b624d92602_n.jpg" data-src="https://c2.staticflickr.com/6/5653/30084880543_b624d92602_b.jpg" alt="poisonPsyche_002">
+                    </li>
+                
+        
+            
+        
+        
+        
+            <p class="title">Skel_</p>
+            <p class="date">2016</p>
+            
+        
+            
+        
+            
+                
+                
+                    <li>
+                        <img class="image b-lazy" src="https://c1.staticflickr.com/9/8468/29115773930_631c77081c_n.jpg" data-src="https://c1.staticflickr.com/9/8468/29115773930_631c77081c_b.jpg" alt="Skel_002">
+                    </li>
+                
+        
+            
+        
+        
+    </ul>
+</section>
+    
+    <footer id="copyright">
+    <p>Copyright &copy; Rowan Guarnagia-Gryder</p>
+</footer>
 
-    <footer class="copyright">
-        <p>Copyright &copy; Rowan Guarnagia-Gryder
-        </p>
-    </footer>
-    
+<!-- Scripts -->
+<script src="rowangryder.com/assets/js/scripts.js"></script>
+<script src="rowangryder.com/assets/js/blazy.js"></script>
+<script>
+    ;(function() {
+        // Initialize
+        var bLazy = new Blazy();
+    })();
+</script>
+
 </body>
 
 </html>

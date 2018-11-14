@@ -1,61 +1,76 @@
 <!DOCTYPE html>
+<!--
+	Rowan Guarnagia-Gryder 2018(c)
+-->
 <html lang="en">
 
-<!--Code by Rowan Guarnagia-Gryder-->    
-    
 <head>
-    <meta charset="utf-8">
+	<title>Rowan Gryder </title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    
+<!-- StyleSheets -->
+    
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    
+<!-- Favicon -->
+    
+    <link rel="icon" type="image/png" href="/assets/images/icon.png">
+
+    <!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+	<!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Rowan Guarnagia-Gryder | Digital Graphics Artist and Motion Designer| Portfolio | Bio | Contact">
     <meta name="author" content="Rowan Gryder">
     <meta name="viewport" content="width=device-width, initial-scale= 1.0">
-
-    <title>Rowan Gryder</title>
-    
-    <!-- Rowan, Gryder, Artist -->
     
     <meta name="keywords" content="Rowan, Gryder, art, artist, CGI, computer, graphic, design, freelance, video, portfolio, production, statement, contact, media, work, about, editing, maker, photo" />
     <meta name="robots" content="index, nofollow">
     <meta name="revisit-after" content="7 days">
     <meta name="google-site-verification" content="-vuySRFWsbeETFJPC-ALSDdeDA2Ah2YydCCDIlM5-Zc" />
-
-    <link href="css/style.css" rel="stylesheet">
-    <script src="js/scripts.js"></script>
-    <link rel="icon" type="image/png" href="images/icon.png">
     
 </head>
 
-<body>
+
+<body onscroll="scrollScale()">
+    <header id="nameHeader">
+    <a href="index.html" class="headerName" id="nameTag">Rowan Gryder</a>
+</header>
+
+
+    
     <nav class="navBar">
+
+    <div class="upperContainer" id="elem">
         <div class="linkContainer">
-            <a href="index.html" class="headerName">Rowan Gryder</a>
+            <a href="work.html" class="mainLinks">|Work|</a>
+            <br>
         </div>
-        
-        <div class="upperContainer" id="elem">
-            <div class="linkContainer">
-                <a href="work.html" class="mainLinks">Work</a>
-            </div>
-            <div class="linkContainer">
-                <a href="about.html" class="mainLinks">Bio / CV</a>
-            </div>
-            <div class="linkContainer">
-                <a href="contact.html" class="mainLinks">Contact</a>
-            </div>
+        <div class="linkContainer">
+            <a href="photography.html" class="mainLinks">|Blog|</a>
+            <br>
         </div>
-        
-        
-        <div class="menuIconContainer" onclick="navFold(this)"> 
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+        <div class="linkContainer">
+            <a href="about.html" class="mainLinks">|About|</a>
         </div>
-    </nav>
+    </div>
+
+
+    <div class="navBurger" onclick="navFold(this)"> 
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
     
-    <div class="orb"></div>
-    <div class="orb sub0"></div>
-    <div class="orb sub1"></div>
-    <div class="orb sub2"></div>
+</nav>
     
+    
+
+    
+    <section>
+    <div id="stripesSVG"></div>
+<!--
     <div class="lines">
         <div class="line"></div>
         <div class="line"></div>
@@ -88,19 +103,33 @@
         <div class="line"></div>
         <div class="line"></div>
     </div>
+-->
+</section>
     
-    <div style="margin: auto; padding-top: 30vh">
-        <div class="imgContainer">
-            <iframe src="https://player.vimeo.com/video/234580668" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="portfolioVideo"></iframe>
-        </div>
-    </div>
+    <div id="backdrop"></div>
     
+    <div class="spacer"></div>
 
-    <footer class="copyright">
-        <p>Copyright &copy; Rowan Guarnagia-Gryder
-        </p>
-    </footer>
+<section class="photoGallery">
+    <div class="imageContainer">
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/234580668?color=ffffff&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+</section>
     
+    <footer id="copyright">
+    <p>Copyright &copy; Rowan Guarnagia-Gryder</p>
+</footer>
+
+<!-- Scripts -->
+<script src="rowangryder.com/assets/js/scripts.js"></script>
+<script src="rowangryder.com/assets/js/blazy.js"></script>
+<script>
+    ;(function() {
+        // Initialize
+        var bLazy = new Blazy();
+    })();
+</script>
+
 </body>
 
 </html>
