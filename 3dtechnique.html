@@ -122,6 +122,10 @@
                     <li class="imageContainer">
                         <img class="image b-lazy" src="https://c2.staticflickr.com/2/1715/24543463481_381d1e59db_n.jpg" data-src="https://c2.staticflickr.com/2/1715/24543463481_381d1e59db_b.jpg" alt="test_c1">
                     </li>
+        
+                    <noscript>
+                        <img class="image" src="https://c2.staticflickr.com/2/1715/24543463481_381d1e59db_b.jpg" alt="test_c1">
+                    </noscript>
                 
         
             
@@ -130,6 +134,10 @@
                     <li class="imageContainer">
                         <img class="image b-lazy" src="https://c2.staticflickr.com/2/1447/23998880503_33b393fb32_n.jpg" data-src="https://c2.staticflickr.com/2/1447/23998880503_33b393fb32_b.jpg" alt="test_c2">
                     </li>
+        
+                    <noscript>
+                        <img class="image" src="https://c2.staticflickr.com/2/1447/23998880503_33b393fb32_b.jpg" alt="test_c2">
+                    </noscript>
                 
         
             
@@ -148,6 +156,10 @@
                     <li class="imageContainer">
                         <img class="image b-lazy" src="https://c1.staticflickr.com/9/8330/28992083831_a17c511c83_n.jpg" data-src="https://c1.staticflickr.com/9/8330/28992083831_a17c511c83_b.jpg" alt="5panelmockup_005">
                     </li>
+        
+                    <noscript>
+                        <img class="image" src="https://c1.staticflickr.com/9/8330/28992083831_a17c511c83_b.jpg" alt="5panelmockup_005">
+                    </noscript>
                 
         
             
@@ -166,6 +178,10 @@
                     <li class="imageContainer">
                         <img class="image b-lazy" src="https://c2.staticflickr.com/8/7413/16281752607_1b135667ee_n.jpg" data-src="https://c2.staticflickr.com/8/7413/16281752607_1b135667ee_b.jpg" alt="TankGray_001">
                     </li>
+        
+                    <noscript>
+                        <img class="image" src="https://c2.staticflickr.com/8/7413/16281752607_1b135667ee_b.jpg" alt="TankGray_001">
+                    </noscript>
                 
         
             
@@ -174,6 +190,10 @@
                     <li class="imageContainer">
                         <img class="image b-lazy" src="https://c1.staticflickr.com/9/8643/16281752627_b0564b9098_n.jpg" data-src="https://c1.staticflickr.com/9/8643/16281752627_b0564b9098_b.jpg" alt="TankGray_002">
                     </li>
+        
+                    <noscript>
+                        <img class="image" src="https://c1.staticflickr.com/9/8643/16281752627_b0564b9098_b.jpg" alt="TankGray_002">
+                    </noscript>
                 
         
             
@@ -182,6 +202,10 @@
                     <li class="imageContainer">
                         <img class="image b-lazy" src="" data-src="https://c2.staticflickr.com/8/7350/16281752657_70dcab69f8_b.jpg" alt="TankGray_003">
                     </li>
+        
+                    <noscript>
+                        <img class="image" src="https://c2.staticflickr.com/8/7350/16281752657_70dcab69f8_b.jpg" alt="TankGray_003">
+                    </noscript>
                 
         
             
@@ -190,6 +214,10 @@
                     <li class="imageContainer">
                         <img class="image b-lazy" src="https://c2.staticflickr.com/8/7281/15810460124_f2d4a18855_n.jpg" data-src="https://c2.staticflickr.com/8/7281/15810460124_f2d4a18855_b.jpg" alt="TankViewport_001">
                     </li>
+        
+                    <noscript>
+                        <img class="image" src="https://c2.staticflickr.com/8/7281/15810460124_f2d4a18855_b.jpg" alt="TankViewport_001">
+                    </noscript>
                 
         
             
@@ -198,6 +226,10 @@
                     <li class="imageContainer">
                         <img class="image b-lazy" src="https://c2.staticflickr.com/8/7340/16247071477_fc4d104367_n.jpg" data-src="https://c2.staticflickr.com/8/7340/16247071477_fc4d104367_b.jpg" alt="TankViewport_002">
                     </li>
+        
+                    <noscript>
+                        <img class="image" src="https://c2.staticflickr.com/8/7340/16247071477_fc4d104367_b.jpg" alt="TankViewport_002">
+                    </noscript>
                 
         
             
@@ -211,14 +243,28 @@
 </footer>
 
 <!-- Scripts -->
-<script src="rowangryder.com/assets/js/scripts.js"></script>
-<script src="rowangryder.com/assets/js/blazy.js"></script>
+<script src="/assets/js/scripts.js"></script>
+<script src="/assets/js/blazy.js"></script>
+
 <script>
     ;(function() {
         // Initialize
-        var bLazy = new Blazy();
+        var blazy = new Blazy({
+            breakpoints: [{
+                width: 600,
+                src: 'data-src'
+            }],
+            success: function(element){
+                updateCounter();
+                setTimeout(function(){
+                    var parent = element.parentNode;
+                    parent.className = parent.className.replace(/\bloading\b/,'');
+                }, 200);
+            }
+        });
     })();
 </script>
+
 
 </body>
 
