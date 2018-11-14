@@ -104,14 +104,28 @@
 </footer>
 
 <!-- Scripts -->
-<script src="rowangryder.com/assets/js/scripts.js"></script>
-<script src="rowangryder.com/assets/js/blazy.js"></script>
+<script src="/assets/js/scripts.js"></script>
+<script src="/assets/js/blazy.js"></script>
+
 <script>
     ;(function() {
         // Initialize
-        var bLazy = new Blazy();
+        var blazy = new Blazy({
+            breakpoints: [{
+                width: 600,
+                src: 'data-src'
+            }],
+            success: function(element){
+                updateCounter();
+                setTimeout(function(){
+                    var parent = element.parentNode;
+                    parent.className = parent.className.replace(/\bloading\b/,'');
+                }, 200);
+            }
+        });
     })();
 </script>
+
 
 </body>
 

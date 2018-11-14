@@ -18,3 +18,17 @@ function navFold(elem) {
     elem.classList.toggle("change");
     document.getElementById('elem').classList.toggle("change");
 }
+
+//var blazy = new Blazy({
+//    breakpoints: [{
+//        width: 30vw,
+//        src: 'data-src'
+//    }],
+//    success: function(element){
+//        updateCounter();
+//        setTimeout(function(){
+//            var parent = element.parentNode;
+//            parent.className = parent.className.replace(/\bloading\b/,'');
+//        }, 200);
+//    }
+//});
