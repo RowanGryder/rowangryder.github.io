@@ -1,54 +1,71 @@
 <!DOCTYPE html>
+<!--
+	Rowan Guarnagia-Gryder 2018(c)
+-->
 <html lang="en">
 
-<!--Code by Rowan Guarnagia-Gryder-->    
-    
 <head>
-    <meta charset="utf-8">
+	<title>Rowan Gryder  | Work</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    
+<!-- StyleSheets -->
+    
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    
+<!-- Favicon -->
+    
+    <link rel="icon" type="image/png" href="/assets/images/icon.png">
+
+    <!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+	<!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Rowan Guarnagia-Gryder | Digital Grpahics Artist and Motion Designer| Portfolio |">
+    <meta name="description" content="Rowan Guarnagia-Gryder | Digital Graphics Artist and Motion Designer| Portfolio | Bio | Contact">
     <meta name="author" content="Rowan Gryder">
     <meta name="viewport" content="width=device-width, initial-scale= 1.0">
-
-    <title>Rowan Gryder | Work</title>
-
-    <link href="css/style.css" rel="stylesheet">
-    <script src="js/scripts.js"></script>
-    <link rel="icon" type="image/png" href="images/icon.png">
     
 </head>
 
-<body>
+
+<body onscroll="scrollScale()">
+    <header id="nameHeader">
+    <a href="index.html" class="headerName" id="nameTag">Rowan Gryder</a>
+</header>
+
+
+    
     <nav class="navBar">
+
+    <div class="upperContainer" id="elem">
         <div class="linkContainer">
-            <a href="index.html" class="headerName">Rowan Gryder</a>
+            <a href="work.html" class="mainLinks">|Work|</a>
+            <br>
         </div>
-        
-        <div class="upperContainer" id="elem">
-            <div class="linkContainer">
-                <a href="work.html" class="mainLinks">Work</a>
-            </div>
-            <div class="linkContainer">
-                <a href="about.html" class="mainLinks">Bio / CV</a>
-            </div>
-            <div class="linkContainer">
-                <a href="contact.html" class="mainLinks">Contact</a>
-            </div>
+        <div class="linkContainer">
+            <a href="photography.html" class="mainLinks">|Blog|</a>
+            <br>
         </div>
-        
-        
-        <div class="menuIconContainer" onclick="navFold(this)"> 
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+        <div class="linkContainer">
+            <a href="about.html" class="mainLinks">|About|</a>
         </div>
-    </nav>
+    </div>
+
+
+    <div class="navBurger" onclick="navFold(this)"> 
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
     
-    <div class="orb"></div>
-    <div class="orb sub0"></div>
-    <div class="orb sub1"></div>
-    <div class="orb sub2"></div>
+</nav>
     
+    
+
+    
+    <section>
+    <div id="stripesSVG"></div>
+<!--
     <div class="lines">
         <div class="line"></div>
         <div class="line"></div>
@@ -81,36 +98,71 @@
         <div class="line"></div>
         <div class="line"></div>
     </div>
+-->
+</section>
     
-<!--Portfolio-->
-<!--Place Albums which link to imageStacks-->
+    <div id="backdrop"></div>
     
-    <div class="contentStack">
-        <section>
-            <article class="album">
-                
-                <a href="3d.html" class="mainLinks">3D
-                    <img src="https://c1.staticflickr.com/5/4077/34927906943_81307ba1c6_b.jpg" class="albumImage">
-                </a>
-            </article>
-            <div class="album">
-                <a href="2d.html" class="mainLinks">2D
-                <img src="https://c1.staticflickr.com/5/4210/35697163466_b6d152928f_b.jpg" class="albumImage"> </a>
-            </div>
-            <div class="album">
-                <a href="motion.html" class="mainLinks">Motion
-                    <img src="https://c1.staticflickr.com/5/4050/34927907903_1b8d4f7a22_b.jpg" class="albumImage">
-                </a>
-            </div>
-        </section>  
-    </div>
-    
+    <div class="spacer"></div>
 
-    <footer class="copyright">
-        <p>Copyright &copy; Rowan Guarnagia-Gryder
-        </p>
-    </footer>
+<section class="photoGallery">
+    <ul id="workSectionContainer">
+        <li>
+            <p class="title">3d</p>
+            <a href="3d.html">
+                <img class="workSection" src="https://c1.staticflickr.com/5/4077/34927906943_f88bb2995a_h.jpg" alt="3D">
+            </a>
+        </li>
+        <li>
+            <p class="title">2d</p>
+            <a href="2d.html">
+                <img class="workSection" src="https://c1.staticflickr.com/5/4210/35697163466_229fa4774a_h.jpg" alt="2D">
+            </a>
+        </li>
+        <li>
+            <p class="title">motion</p>
+            <a href="motion.html">
+                <img class="workSection" src="https://c1.staticflickr.com/5/4050/34927907903_5ca4714296_h.jpg" alt="motion">
+            </a> 
+        </li>
+    </ul>
+</section>
+
+<!--
+<section class="photoGallery">
+    <div id="workSectionContainer">
+        <p class="title">3d</p>
+        <a href="3d.html">
+            <img class="workSection" src="https://c1.staticflickr.com/5/4077/34927906943_f88bb2995a_h.jpg" alt="3D">
+        </a>
+        
+        <p class="title">2d</p>
+        <a href="2d.html">
+            <img class="workSection" src="https://c1.staticflickr.com/5/4210/35697163466_229fa4774a_h.jpg" alt="2D">
+        </a>
+        
+        <p class="title">motion</p>
+        <a href="motion.html">
+            <img class="workSection" src="https://c1.staticflickr.com/5/4050/34927907903_5ca4714296_h.jpg" alt="motion">
+        </a> 
+    </div>
+</section>-->
+
     
+    <footer id="copyright">
+    <p>Copyright &copy; Rowan Guarnagia-Gryder</p>
+</footer>
+
+<!-- Scripts -->
+<script src="rowangryder.com/assets/js/scripts.js"></script>
+<script src="rowangryder.com/assets/js/blazy.js"></script>
+<script>
+    ;(function() {
+        // Initialize
+        var bLazy = new Blazy();
+    })();
+</script>
+
 </body>
 
 </html>

@@ -1,54 +1,71 @@
 <!DOCTYPE html>
+<!--
+	Rowan Guarnagia-Gryder 2018(c)
+-->
 <html lang="en">
 
-<!--Code by Rowan Guarnagia-Gryder-->    
-    
 <head>
-    <meta charset="utf-8">
+	<title>Rowan Gryder  | About</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    
+<!-- StyleSheets -->
+    
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    
+<!-- Favicon -->
+    
+    <link rel="icon" type="image/png" href="/assets/images/icon.png">
+
+    <!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+	<!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Rowan Guarnagia-Gryder | Digital Grpahics Artist and Motion Designer| Bio |">
+    <meta name="description" content="Rowan Guarnagia-Gryder | Digital Graphics Artist and Motion Designer| Portfolio | Bio | Contact">
     <meta name="author" content="Rowan Gryder">
     <meta name="viewport" content="width=device-width, initial-scale= 1.0">
-
-    <title>Rowan Gryder | About</title>
-
-    <link href="css/style.css" rel="stylesheet">
-    <script src="js/scripts.js"></script>
-    <link rel="icon" type="image/png" href="images/icon.png">
     
 </head>
 
-<body>
+
+<body onscroll="scrollScale()">
+    <header id="nameHeader">
+    <a href="index.html" class="headerName" id="nameTag">Rowan Gryder</a>
+</header>
+
+
+    
     <nav class="navBar">
+
+    <div class="upperContainer" id="elem">
         <div class="linkContainer">
-            <a href="index.html" class="headerName">Rowan Gryder</a>
+            <a href="work.html" class="mainLinks">|Work|</a>
+            <br>
         </div>
-        
-        <div class="upperContainer" id="elem">
-            <div class="linkContainer">
-                <a href="work.html" class="mainLinks">Work</a>
-            </div>
-            <div class="linkContainer">
-                <a href="about.html" class="mainLinks">Bio / CV</a>
-            </div>
-            <div class="linkContainer">
-                <a href="contact.html" class="mainLinks">Contact</a>
-            </div>
+        <div class="linkContainer">
+            <a href="photography.html" class="mainLinks">|Blog|</a>
+            <br>
         </div>
-        
-        
-        <div class="menuIconContainer" onclick="navFold(this)"> 
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+        <div class="linkContainer">
+            <a href="about.html" class="mainLinks">|About|</a>
         </div>
-    </nav>
+    </div>
+
+
+    <div class="navBurger" onclick="navFold(this)"> 
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
     
-    <div class="orb"></div>
-    <div class="orb sub0"></div>
-    <div class="orb sub1"></div>
-    <div class="orb sub2"></div>
+</nav>
     
+    
+
+    
+    <section>
+    <div id="stripesSVG"></div>
+<!--
     <div class="lines">
         <div class="line"></div>
         <div class="line"></div>
@@ -81,43 +98,49 @@
         <div class="line"></div>
         <div class="line"></div>
     </div>
-    
-<!--Bio and CV-->
-
-    <div class="contentStack">
-        <div class="textContent">
-            <h2><i>Rowan Guarnagia-Gryder</i></h2>
-            <p><i>Mixed Digital Media Artist; From Boston, MA; Based in Richmond, VA</i> <br>
-            Specialized in 3D computer graphics, motion, rendering and modeling</p>
-            
-            <h2>EDUCATION</h2>
-            <p>
-                2017 – Bachelors of Fine Art, Kinetic Imaging<br> 
-                <i>Virginia Commonwealth University School of the Arts</i><br>
-                <i>Gerrit Rietveld Academie</i>, VAV (Audiovisual)
-            </p>
-            
-            <h2>Additional Links</h2>
-            <a href="https://www.instagram.com/boojicontent/">Instagram</a>
-            <br>
-<!--
-            <a href="https://www.instagram.com/rowangryder/">Instagram(Professional)</a>
-            <br>
 -->
-            <a href="https://www.behance.net/rowangg">Behance</a>
-            <br>
-            <a href="https://vimeo.com/rowangryder">Vimeo</a>
-            <br>
-            <a href="http://cargocollective.com/rowangryder">Cargo</a>
-            
-        </div>
-    </div>
+</section>
     
-    <footer class="copyright">
-        <p>Copyright &copy; Rowan Guarnagia-Gryder
+    <div id="backdrop"></div>
+    
+    <div class="spacer"></div>
+
+<section class="photoGallery">
+    <div class="text">
+        <p class="title">
+            Rowan Guarnagia-Gryder
         </p>
-    </footer>
+        
+        <p class="details">
+            Mixed Digital Media Artist; From Boston, MA; Based in Richmond, VA<br>Specialized in 3D computer graphics, motion, rendering and modeling
+        </p>
+
+        <p class="details">
+            EDUCATION<br>
+            2017 – Bachelors of Fine Art, Kinetic Imaging<br>
+            Virginia Commonwealth University School of the Arts<br>
+            Gerrit Rietveld Academie, VAV (Audiovisual)
+        </p>
+        
+        <p class="date">Contact</p>
+        <p class="details">contact@rowangryder.com</p>
+    </div>
+</section>
     
+    <footer id="copyright">
+    <p>Copyright &copy; Rowan Guarnagia-Gryder</p>
+</footer>
+
+<!-- Scripts -->
+<script src="rowangryder.com/assets/js/scripts.js"></script>
+<script src="rowangryder.com/assets/js/blazy.js"></script>
+<script>
+    ;(function() {
+        // Initialize
+        var bLazy = new Blazy();
+    })();
+</script>
+
 </body>
 
 </html>
