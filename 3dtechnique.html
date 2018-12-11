@@ -29,11 +29,36 @@
 
 
 <body onscroll="scrollScale()">
-    <header class="headContainer">
-    <a href="index.html" class="headerName" id="nameTag">Rowan Gryder</a>
-</header>
+    
+    <nav class="navHeader">
+    <div class="name">
+        <a href="index.html"><div class="navContainer"><p>Rowan Gryder</p></div></a>
+        
+        <div class="navBurger" onclick="navFold(this)"> 
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </div>
+    
+    <div class="menu" id="elem">
+        <a href="work.html"><div class="navContainer"><p>→Work</p></div></a>
+        <a href="photography.html"><div class="navContainer"><p>→Blog</p></div></a>
+        <a href="about.html"><div class="navContainer"><p>→Info</p></div></a>
+    </div>
+    
 
-
+<!--
+    <div class="navHeaderLeft">
+        <a href="index.html" class="headerName">Rowan Gryder</a>
+    </div>
+    <div class="navHeaderRight">
+        <a href="work.html" class="mainLinks">Work←</a>
+        <a href="photography.html" class="mainLinks">Blog←</a>
+        <a href="about.html" class="mainLinks">About←</a>
+    </div>
+-->
+</nav>
     
     <div id="backdrop"></div>
     
