@@ -1,0 +1,53 @@
+<form name="bikeDataSet" class="bikeDataContainer">
+    
+    <label for="buildName">Build Label</label>
+    <input type="text" id="buildName">
+    
+<!--Wheel Inputs-->
+    <label for="wheelSize">Wheel Size:</label>
+    <select name="wheelSelection" id="wheelSelection">
+        <option value="622">700c (622)</option>
+        <option value="584">650b (584)</option>
+        <option value="559">26" (559)</option>
+        <option value="406">20" (406)</option>
+    </select>
+<!--display the wheel size bsd in mm when selected from preset, or overwrite it with a custom value by entering directly into the entery box which clears the select dropdown-->
+    <input type="number" id="wheelSize">
+    
+    
+    <label for="tireSize">Tire Size</label>
+    <input type="number" id="tireSize">
+    
+<!--Calculated wheel values -->
+    <label for="wheelDia">Wheel Diameter</label>
+    <div id="wheelDia"></div>
+    
+    <label for="wheelCir">Wheel Circumference</label>
+    <div id="wheelCir"></div>
+    
+<!--Gearing Selection-->
+    <label for="chainRings">Chain Rings</label>
+    <input type="text" id="chainRings">
+    
+    <label for="crankLength">Crank Length</label>
+    <input type="number" id="crankLength">
+    
+    <label for="cassetteCogs">Cassette Cogs</label>
+    <span class="tooltipText">Select a preset from the dropdown or manually enter cogs (you can separate them by spaces dashes or commas)</span>
+    <select id="cassetteSelection">
+<!--        get cassette preset options from a lookup table and populate options here-->
+    </select>
+<!--same as with wheel size, selection auto-fills the entry box but change in manual entry to clear the selection-->
+    <input type="text" id="cassetteCogs">
+    
+    
+<!--    calculations-->
+    <label>Total Range</label>
+    <div id="totalRange"></div>
+    
+    <label>Radius Ratio</label>
+    <div id="radiusRatioMatrix"></div>
+    
+    <label>Gear Inches</label>
+    <div id="gearInchesMatrix"></div>
+</form>
