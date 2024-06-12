@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-	Rowan Guarnagia-Gryder 2018(c)
+	Rowan Guarnagia-Gryder 2024(c)
 -->
 <html lang="en">
 
@@ -25,6 +25,21 @@
     <meta name="author" content="Rowan Gryder">
     <meta name="viewport" content="width=device-width, initial-scale= 1.0">
     
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>3D | Rowan Gryder</title>
+<meta name="generator" content="Jekyll v3.8.4" />
+<meta property="og:title" content="3D" />
+<meta name="author" content="Rowan Guarnagia-Gryder" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Three dimensional models, materials, and render work." />
+<meta property="og:description" content="Three dimensional models, materials, and render work." />
+<link rel="canonical" href="rowangryder.com/3d" />
+<meta property="og:url" content="rowangryder.com/3d" />
+<meta property="og:site_name" content="Rowan Gryder" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Rowan Guarnagia-Gryder"},"description":"Three dimensional models, materials, and render work.","headline":"3D","@type":"WebPage","url":"rowangryder.com/3d","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
 </head>
 
 
@@ -32,7 +47,9 @@
     
     <nav class="navHeader">
     <div class="name">
-        <a href="index.html"><div class="navContainer"><p>Rowan Gryder</p></div></a>
+        <a href="/"><div class="navContainer" id="fullname"><p>Rowan Gryder</p></div></a>
+        <a href="/"><div class="navContainer" id="initials"><p>RG</p></div></a>
+        
         
         <div class="navBurger" onclick="navFold(this)"> 
             <div class="bar1"></div>
@@ -42,22 +59,11 @@
     </div>
     
     <div class="menu" id="elem">
-        <a href="work.html"><div class="navContainer"><p>→Work</p></div></a>
-        <a href="photography.html"><div class="navContainer"><p>→Blog</p></div></a>
-        <a href="about.html"><div class="navContainer"><p>→Info</p></div></a>
+        <a href="/work"><div class="navContainer"><p>→Work</p></div></a>
+        <a href="/blog"><div class="navContainer"><p>→Blog</p></div></a>
+        <a href="/about"><div class="navContainer"><p>→Info</p></div></a>
     </div>
     
-
-<!--
-    <div class="navHeaderLeft">
-        <a href="index.html" class="headerName">Rowan Gryder</a>
-    </div>
-    <div class="navHeaderRight">
-        <a href="work.html" class="mainLinks">Work←</a>
-        <a href="photography.html" class="mainLinks">Blog←</a>
-        <a href="about.html" class="mainLinks">About←</a>
-    </div>
--->
 </nav>
     
     <div id="backdrop"></div>
@@ -65,13 +71,33 @@
     <div class="spacer"></div>
 
 <section class="photoGallery">
+    <div class="regMark tl">
+    <div style="width: 1rem; height: .1rem; transform: translate(-50%, 0);"></div>
+    <div style="width: .1rem; height: 1rem; transform: translate(0, -50%)"></div>
+</div>
+
+<div class="regMark tr" style="transform: rotate(90deg);">
+    <div style="width: 1rem; height: .1rem; transform: translate(-50%, 0);"></div>
+    <div style="width: .1rem; height: 1rem; transform: translate(0, -50%)"></div>
+</div>
+
+<div class="regMark br" style="transform: rotate(180deg);">
+    <div style="width: 1rem; height: .1rem; transform: translate(-50%, 0);"></div>
+    <div style="width: .1rem; height: 1rem; transform: translate(0, -50%)"></div>
+</div>
+
+<div class="regMark bl" style="transform: rotate(270deg);">
+    <div style="width: 1rem; height: .1rem; transform: translate(-50%, 0);"></div>
+    <div style="width: .1rem; height: 1rem; transform: translate(0, -50%)"></div>
+</div>
+    
     <ul class="additionalMenu">
-        <p class="date">Other Categories→</p>
+        <p class="date">Sub-Categories→</p>
         <li>
-            <a href="3dtechnique.html" class="link details">→Technical 3D Work</a>
+            <a href="3dtechnique.html" class="link indexTitle">→Technical 3D Work</a>
         </li>
         <li>
-            <a href="substance.html" class="link details">→Substance Work</a>
+            <a href="substance.html" class="link indexTitle">→Substance Work</a>
         </li>
     </ul>
 </section>
@@ -79,12 +105,34 @@
 <div class="spacerHalf"></div>
 
 <section class="photoGallery">
+    <div class="regMark tl">
+    <div style="width: 1rem; height: .1rem; transform: translate(-50%, 0);"></div>
+    <div style="width: .1rem; height: 1rem; transform: translate(0, -50%)"></div>
+</div>
+
+<div class="regMark tr" style="transform: rotate(90deg);">
+    <div style="width: 1rem; height: .1rem; transform: translate(-50%, 0);"></div>
+    <div style="width: .1rem; height: 1rem; transform: translate(0, -50%)"></div>
+</div>
+
+<div class="regMark br" style="transform: rotate(180deg);">
+    <div style="width: 1rem; height: .1rem; transform: translate(-50%, 0);"></div>
+    <div style="width: .1rem; height: 1rem; transform: translate(0, -50%)"></div>
+</div>
+
+<div class="regMark bl" style="transform: rotate(270deg);">
+    <div style="width: 1rem; height: .1rem; transform: translate(-50%, 0);"></div>
+    <div style="width: .1rem; height: 1rem; transform: translate(0, -50%)"></div>
+</div>
+    
     
     <ul>
         
         
-            <p class="title">Living Room_</p>
+            <p class="title" id="livingroom">Living Room_</p>
             <p class="date">2017</p>
+            
+                <p class="details">Submission that was printed in Property Materials' Winter 2017 issue.</p>
             
         
             
@@ -105,8 +153,10 @@
         
         
         
-            <p class="title">Werkplaats_</p>
+            <p class="title" id="werkplaats">Werkplaats_</p>
             <p class="date">2017</p>
+            
+                <p class="details">Submission that was printed in Property Materials' Summer 2017 issue.</p>
             
         
             
@@ -127,41 +177,7 @@
         
         
         
-            <p class="title">Track Bike_</p>
-            <p class="date">2017</p>
-            
-        
-            
-        
-            
-                
-                
-                    <li>
-                        <img class="image b-lazy" src="https://c1.staticflickr.com/3/2939/33327853850_8617404c6c_n.jpg" data-src="https://c1.staticflickr.com/3/2939/33327853850_8617404c6c_h.jpg" alt="trackbike_rendered">
-                    </li>
-        
-                    <noscript>
-                        <img class="image" src="https://c1.staticflickr.com/3/2939/33327853850_8617404c6c_h.jpg" alt="trackbike_rendered">
-                    </noscript>
-                
-        
-            
-                
-                
-                    <li>
-                        <img class="image b-lazy" src="https://c2.staticflickr.com/4/3724/33582788481_887c48b189_n.jpg" data-src="https://c2.staticflickr.com/4/3724/33582788481_887c48b189_b.jpg" alt="trackbike_gray">
-                    </li>
-        
-                    <noscript>
-                        <img class="image" src="https://c2.staticflickr.com/4/3724/33582788481_887c48b189_b.jpg" alt="trackbike_gray">
-                    </noscript>
-                
-        
-            
-        
-        
-        
-            <p class="title">Pods_</p>
+            <p class="title" id="pods">Pods_</p>
             <p class="date">2017</p>
             
         
@@ -191,7 +207,7 @@
         
         
         
-            <p class="title">Icarus_</p>
+            <p class="title" id="icarus">Icarus_</p>
             <p class="date">2016</p>
             
         
@@ -249,7 +265,7 @@
         
         
         
-            <p class="title">Dysmorph_</p>
+            <p class="title" id="dysmorph">Dysmorph_</p>
             <p class="date">2016</p>
             
         
@@ -307,7 +323,7 @@
         
         
         
-            <p class="title">Beetle Head_</p>
+            <p class="title" id="beetlehead">Beetle Head_</p>
             <p class="date">2015</p>
             
         
@@ -354,6 +370,8 @@
         
     </ul>
 </section>
+
+<div class="spacer"></div>
     
     <footer id="copyright">
     <p>Copyright &copy; Rowan Guarnagia-Gryder</p>

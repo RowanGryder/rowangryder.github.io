@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-	Rowan Guarnagia-Gryder 2018(c)
+	Rowan Guarnagia-Gryder 2024(c)
 -->
 <html lang="en">
 
@@ -25,6 +25,21 @@
     <meta name="author" content="Rowan Gryder">
     <meta name="viewport" content="width=device-width, initial-scale= 1.0">
     
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>2D | Rowan Gryder</title>
+<meta name="generator" content="Jekyll v3.8.4" />
+<meta property="og:title" content="2D" />
+<meta name="author" content="Rowan Guarnagia-Gryder" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Two dimensional graphics, design, and print work." />
+<meta property="og:description" content="Two dimensional graphics, design, and print work." />
+<link rel="canonical" href="rowangryder.com/2d" />
+<meta property="og:url" content="rowangryder.com/2d" />
+<meta property="og:site_name" content="Rowan Gryder" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Rowan Guarnagia-Gryder"},"description":"Two dimensional graphics, design, and print work.","headline":"2D","@type":"WebPage","url":"rowangryder.com/2d","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
 </head>
 
 
@@ -32,7 +47,9 @@
     
     <nav class="navHeader">
     <div class="name">
-        <a href="index.html"><div class="navContainer"><p>Rowan Gryder</p></div></a>
+        <a href="/"><div class="navContainer" id="fullname"><p>Rowan Gryder</p></div></a>
+        <a href="/"><div class="navContainer" id="initials"><p>RG</p></div></a>
+        
         
         <div class="navBurger" onclick="navFold(this)"> 
             <div class="bar1"></div>
@@ -42,22 +59,11 @@
     </div>
     
     <div class="menu" id="elem">
-        <a href="work.html"><div class="navContainer"><p>→Work</p></div></a>
-        <a href="photography.html"><div class="navContainer"><p>→Blog</p></div></a>
-        <a href="about.html"><div class="navContainer"><p>→Info</p></div></a>
+        <a href="/work"><div class="navContainer"><p>→Work</p></div></a>
+        <a href="/blog"><div class="navContainer"><p>→Blog</p></div></a>
+        <a href="/about"><div class="navContainer"><p>→Info</p></div></a>
     </div>
     
-
-<!--
-    <div class="navHeaderLeft">
-        <a href="index.html" class="headerName">Rowan Gryder</a>
-    </div>
-    <div class="navHeaderRight">
-        <a href="work.html" class="mainLinks">Work←</a>
-        <a href="photography.html" class="mainLinks">Blog←</a>
-        <a href="about.html" class="mainLinks">About←</a>
-    </div>
--->
 </nav>
     
     <div id="backdrop"></div>
@@ -65,11 +71,42 @@
     <div class="spacer"></div>
 
 <section class="photoGallery">
+    <div class="regMark tl">
+    <div style="width: 1rem; height: .1rem; transform: translate(-50%, 0);"></div>
+    <div style="width: .1rem; height: 1rem; transform: translate(0, -50%)"></div>
+</div>
+
+<div class="regMark tr" style="transform: rotate(90deg);">
+    <div style="width: 1rem; height: .1rem; transform: translate(-50%, 0);"></div>
+    <div style="width: .1rem; height: 1rem; transform: translate(0, -50%)"></div>
+</div>
+
+<div class="regMark br" style="transform: rotate(180deg);">
+    <div style="width: 1rem; height: .1rem; transform: translate(-50%, 0);"></div>
+    <div style="width: .1rem; height: 1rem; transform: translate(0, -50%)"></div>
+</div>
+
+<div class="regMark bl" style="transform: rotate(270deg);">
+    <div style="width: 1rem; height: .1rem; transform: translate(-50%, 0);"></div>
+    <div style="width: .1rem; height: 1rem; transform: translate(0, -50%)"></div>
+</div>
+    
+    <ul class="additionalMenu">
+        <p class="date">Sub-Categories→</p>
+        <li>
+            <a href="photography.html" class="link indexTitle">→Photography</a>
+        </li>
+    </ul>
+</section>
+
+<div class="spacerHalf"></div>
+
+<section class="photoGallery">
     
     <ul>
         
         
-            <p class="title">Privacy Screen_</p>
+            <p class="title" id="privacyscreen">Privacy Screen_</p>
             <p class="date">2018</p>
             
         
@@ -103,7 +140,7 @@
         
         
         
-            <p class="title">Conversation_</p>
+            <p class="title" id="conversation">Conversation_</p>
             <p class="date">2017</p>
             
         
@@ -125,10 +162,10 @@
         
         
         
-            <p class="title">Wave 01 / 02 / 03_</p>
+            <p class="title" id="wave010203">Wave 01 / 02 / 03_</p>
             <p class="date">2017</p>
             
-                <p class="details">Series of 11x7 risograph posters.</p>
+                <p class="details">Series of 11x7 risograph posters produced for the final department shows.</p>
             
         
             
@@ -173,7 +210,7 @@
         
         
         
-            <p class="title">Underwater_</p>
+            <p class="title" id="underwater">Underwater_</p>
             <p class="date">2017</p>
             
         
@@ -195,7 +232,7 @@
         
         
         
-            <p class="title">Album Artworks_</p>
+            <p class="title" id="albumartworks">Album Artworks_</p>
             <p class="date">2017</p>
             
                 <p class="details">Various album covers</p>
@@ -243,7 +280,7 @@
         
         
         
-            <p class="title">Poison Psyche/Psyche Poison_</p>
+            <p class="title" id="poisonpsychepsychepoison">Poison Psyche/Psyche Poison_</p>
             <p class="date">2016</p>
             
                 <p class="details">Series of 2 color 11x7 risograph prints.</p>
@@ -291,7 +328,7 @@
         
         
         
-            <p class="title">Skel_</p>
+            <p class="title" id="skel">Skel_</p>
             <p class="date">2016</p>
             
         
@@ -314,6 +351,8 @@
         
     </ul>
 </section>
+
+<div class="spacer"></div>
     
     <footer id="copyright">
     <p>Copyright &copy; Rowan Guarnagia-Gryder</p>

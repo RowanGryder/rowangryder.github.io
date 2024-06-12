@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-	Rowan Guarnagia-Gryder 2018(c)
+	Rowan Guarnagia-Gryder 2024(c)
 -->
 <html lang="en">
 
@@ -25,6 +25,21 @@
     <meta name="author" content="Rowan Gryder">
     <meta name="viewport" content="width=device-width, initial-scale= 1.0">
     
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Substance | Rowan Gryder</title>
+<meta name="generator" content="Jekyll v3.8.4" />
+<meta property="og:title" content="Substance" />
+<meta name="author" content="Rowan Guarnagia-Gryder" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Material work created with Substance tools." />
+<meta property="og:description" content="Material work created with Substance tools." />
+<link rel="canonical" href="rowangryder.com/substance" />
+<meta property="og:url" content="rowangryder.com/substance" />
+<meta property="og:site_name" content="Rowan Gryder" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Rowan Guarnagia-Gryder"},"description":"Material work created with Substance tools.","headline":"Substance","@type":"WebPage","url":"rowangryder.com/substance","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
 </head>
 
 
@@ -32,7 +47,9 @@
     
     <nav class="navHeader">
     <div class="name">
-        <a href="index.html"><div class="navContainer"><p>Rowan Gryder</p></div></a>
+        <a href="/"><div class="navContainer" id="fullname"><p>Rowan Gryder</p></div></a>
+        <a href="/"><div class="navContainer" id="initials"><p>RG</p></div></a>
+        
         
         <div class="navBurger" onclick="navFold(this)"> 
             <div class="bar1"></div>
@@ -42,22 +59,11 @@
     </div>
     
     <div class="menu" id="elem">
-        <a href="work.html"><div class="navContainer"><p>→Work</p></div></a>
-        <a href="photography.html"><div class="navContainer"><p>→Blog</p></div></a>
-        <a href="about.html"><div class="navContainer"><p>→Info</p></div></a>
+        <a href="/work"><div class="navContainer"><p>→Work</p></div></a>
+        <a href="/blog"><div class="navContainer"><p>→Blog</p></div></a>
+        <a href="/about"><div class="navContainer"><p>→Info</p></div></a>
     </div>
     
-
-<!--
-    <div class="navHeaderLeft">
-        <a href="index.html" class="headerName">Rowan Gryder</a>
-    </div>
-    <div class="navHeaderRight">
-        <a href="work.html" class="mainLinks">Work←</a>
-        <a href="photography.html" class="mainLinks">Blog←</a>
-        <a href="about.html" class="mainLinks">About←</a>
-    </div>
--->
 </nav>
     
     <div id="backdrop"></div>
@@ -65,11 +71,30 @@
     <div class="spacer"></div>
 
 <section class="photoGallery">
+    <div class="regMark tl">
+    <div style="width: 1rem; height: .1rem; transform: translate(-50%, 0);"></div>
+    <div style="width: .1rem; height: 1rem; transform: translate(0, -50%)"></div>
+</div>
+
+<div class="regMark tr" style="transform: rotate(90deg);">
+    <div style="width: 1rem; height: .1rem; transform: translate(-50%, 0);"></div>
+    <div style="width: .1rem; height: 1rem; transform: translate(0, -50%)"></div>
+</div>
+
+<div class="regMark br" style="transform: rotate(180deg);">
+    <div style="width: 1rem; height: .1rem; transform: translate(-50%, 0);"></div>
+    <div style="width: .1rem; height: 1rem; transform: translate(0, -50%)"></div>
+</div>
+
+<div class="regMark bl" style="transform: rotate(270deg);">
+    <div style="width: 1rem; height: .1rem; transform: translate(-50%, 0);"></div>
+    <div style="width: .1rem; height: 1rem; transform: translate(0, -50%)"></div>
+</div>
     
     <ul>
         
         
-            <p class="title">Marbling_</p>
+            <p class="title" id="marbling">Marbling_</p>
             <p class="date">2019</p>
             
                 <p class="details">Completely built in Substance Designer, this graph is relatively simple and starts with nothing but random dots and a flow pattern. The real complexity comes from the layering of dots and flows; there is virtually no limit to the amount of layers on this graph but here I'm restricting it to only 5 layers.</p>
@@ -129,7 +154,7 @@
         
         
         
-            <p class="title">Bikepath Dirt_</p>
+            <p class="title" id="bikepathdirt">Bikepath Dirt_</p>
             <p class="date">2018</p>
             
                 <p class="details">Part of a reconstruction of a street corner in substance (work in progress)</p>
@@ -165,7 +190,7 @@
         
         
         
-            <p class="title">Knerled Sidewalk_</p>
+            <p class="title" id="knerledsidewalk">Knerled Sidewalk_</p>
             <p class="date">2018</p>
             
         
@@ -200,6 +225,8 @@
         
     </ul>
 </section>
+
+<div class="spacer"></div>
     
     <footer id="copyright">
     <p>Copyright &copy; Rowan Guarnagia-Gryder</p>
